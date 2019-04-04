@@ -1,0 +1,31 @@
+Wed Apr 03 21:24:42 EDT 2019 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed Apr 03 21:24:43 EDT 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0169-e5f2-a2de-ffff9cf82a9a 
+on database directory J:\shortcuts\College\Sweng_465_project\ReservationService\database\reservationDB with class loader sun.misc.Launcher$AppClassLoader@266474c2 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_161/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_161-b12
+user.dir=C:\Program Files\Java\jdk1.8.0_161\db
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=J:\shortcuts\College\Sweng_465_project\ReservationService\database
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Apr 03 21:25:03 EDT 2019:
+Shutting down instance a816c00e-0169-e5f2-a2de-ffff9cf82a9a on database directory J:\shortcuts\College\Sweng_465_project\ReservationService\database\reservationDB with class loader sun.misc.Launcher$AppClassLoader@266474c2 
+Wed Apr 03 21:25:03 EDT 2019 Thread[DRDAConnThread_2,5,main] (DATABASE = reservationDB), (DRDAID = {2}), Database 'reservationDB' shutdown.
+----------------------------------------------------------------
+Wed Apr 03 21:27:06 EDT 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a65c80ac-0169-e5f2-a2de-ffff9cf82a9a 
+on database directory J:\shortcuts\College\Sweng_465_project\ReservationService\database\reservationDB with class loader sun.misc.Launcher$AppClassLoader@266474c2 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_161/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_161-b12
+user.dir=C:\Program Files\Java\jdk1.8.0_161\db
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=J:\shortcuts\College\Sweng_465_project\ReservationService\database
+Database Class Loader started - derby.database.classpath=''
