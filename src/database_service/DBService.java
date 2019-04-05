@@ -13,9 +13,9 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.List;
 import containers.AbstractOption;
-import containers.flightOption;
-import containers.hotelOption;
-import containers.vehicleOption;
+import containers.FlightOption;
+import containers.HotelOption;
+import containers.VehicleOption;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,11 +39,12 @@ public class DBService {
         }
     }
     
-    public List<AbstractOption> fetchData(String cityTo, String cityFrom, int guests){
-        List<AbstractOption> optionList = new ArrayList<AbstractOption>();
+    public List<FlightOption> fetchFlightData(String cityTo, String cityFrom, int guests){
+        List<FlightOption> optionList = new ArrayList<FlightOption>();
+        
         try {
             ResultSet rs;
-            AbstractOption AO;
+            FlightOption FO;
             Statement stmt = con.createStatement();
             
             //construct sql request for flight data
@@ -54,8 +55,8 @@ public class DBService {
             
             //process data from flight record
             while(rs.next()){
-                AO = new flightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
-                optionList.add(AO);
+                FO = new FlightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
+                optionList.add(FO);
             }
             
             //construct sql request for flight data
@@ -66,20 +67,23 @@ public class DBService {
             
             //process data from flight record
             while(rs.next()){
-                AO = new flightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
-                optionList.add(AO);
+                FO = new FlightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
+                optionList.add(FO);
             }
             
+            /*
             //construct sql request for hotel data
             String hotelSQL = "SELECT * FROM HOTEL_ROOMS WHERE CITY = '" + cityTo + "' AND MAXGUESTS > " + guests + " ORDER BY PRICE";
+            
             
             //execute query
             rs = stmt.executeQuery(hotelSQL);
             
+            
             //process data from hotel record
             while(rs.next()){
-                AO = new hotelOption(rs.getInt("AVAILABILITY"), rs.getString("HOTELNAME"), rs.getInt("MAXGUESTS"), rs.getString("CITY"), rs.getInt("PRICE"));
-                optionList.add(AO);
+                FO = new HotelOption(rs.getInt("AVAILABILITY"), rs.getString("HOTELNAME"), rs.getInt("MAXGUESTS"), rs.getString("CITY"), rs.getInt("PRICE"));
+                optionList.add(FO);
             }
             
             //construct sql request for vehicle data
@@ -90,9 +94,10 @@ public class DBService {
             
             //process data from hotel record
             while(rs.next()){
-                AO = new vehicleOption(rs.getInt("AVAILABILITY"), rs.getString("CARMAKE"), rs.getString("CARMODEL"), rs.getInt("MAXPASSENGERS"), rs.getString("CITY"), rs.getInt("PRICE"));
-                optionList.add(AO);
+                FO = new VehicleOption(rs.getInt("AVAILABILITY"), rs.getString("CARMAKE"), rs.getString("CARMODEL"), rs.getInt("MAXPASSENGERS"), rs.getString("CITY"), rs.getInt("PRICE"));
+                optionList.add(FO);
             }
+            */
             
         } catch (SQLException err) {
             System.out.println(err.getMessage());
@@ -103,6 +108,10 @@ public class DBService {
     
     public static void main(String[] args){
         DBService db = new DBService();
-        db.fetchData("Pittsburgh", "Erie", 3);
+        List<FlightOption> optionList = db.fetchFlightData("Pittsburgh", "Erie", 3);
+        for(FlightOption item : optionList){
+            System.out.println(item.getCityFrom());
+            System.out.println(item.getCityTo());
+        }
     }
 }

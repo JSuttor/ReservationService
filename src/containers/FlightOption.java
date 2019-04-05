@@ -9,8 +9,8 @@ package containers;
  *
  * @author docto
  */
-public class flightOption extends AbstractOption{
-    public flightOption(int availability, String cityTo, String cityFrom, int price, int time){
+public class FlightOption extends AbstractOption{
+    public FlightOption(int availability, String cityTo, String cityFrom, int price, int time){
         this.availability = availability;
         this.cityTo = cityTo;
         this.cityFrom = cityFrom;

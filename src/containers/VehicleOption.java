@@ -9,21 +9,24 @@ package containers;
  *
  * @author docto
  */
-public class hotelOption extends AbstractOption{
-  
-    public hotelOption(int availability, String name, int guests, String cityTo, int price){
+public class VehicleOption extends AbstractOption{
+    public VehicleOption(int availability, String make, String model, int guests, String cityTo, int price){
         this.guests = guests;
         this.availability = availability;
         this.cityTo = cityTo;
         this.price = price;
-        this.name = name;
+        this.make = make;
+        this.model = model;
     }
     
     public int getAvailability(){
         return availability;
     }
-    public String getName(){
-        return name;
+    public String getMake(){
+        return make;
+    }
+    public String getModel(){
+        return model;
     }
     public int getGuests(){
         return guests;
