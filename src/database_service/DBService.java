@@ -5,7 +5,10 @@
  */
 package database_service;
 
-
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -16,14 +19,18 @@ import containers.AbstractOption;
 import containers.FlightOption;
 import containers.HotelOption;
 import containers.VehicleOption;
+import java.beans.XMLEncoder;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.xml.ws.http.HTTPException;
 /**
  *
  * @author Joshua Suttor
  */
-public class DBService {
+public class DBService extends HttpServlet{
 
     Connection con;
     
@@ -134,6 +141,76 @@ public class DBService {
         }
         
         return optionList;
+    }
+    
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+        String optionType = request.getParameter("optionType");
+        String cityTo = request.getParameter("cityTo");
+        String cityFrom = request.getParameter("cityFrom");
+        String guests = request.getParameter("guests");
+        String type = request.getHeader("accept");
+        
+        try {
+            int guestNum = Integer.parseInt(guests.trim());
+            Object resp;
+            if(optionType.trim().equals("flight"))
+                resp = fetchFlightData(cityTo, cityFrom, guestNum);
+            else if(optionType.trim().equals("hotel"))
+                resp = fetchHotelData(cityTo, guestNum);
+            else if(optionType.trim().equals("vehicle"))
+                resp = fetchVehicleData(cityTo, guestNum);
+            else
+                resp = "not a valid input";
+            send_typed_response(request, response, resp);
+        }
+        catch(NumberFormatException e) {
+            send_typed_response(request, response, -1);
+        }
+  
+    }
+
+    
+    private void send_typed_response(HttpServletRequest request,
+                                     HttpServletResponse response,
+                                     Object data) {
+        String desired_type = request.getHeader("accept");
+
+        // If client requests plain text or HTML, send it; else XML.
+        if (desired_type.contains("text/plain"))
+            send_plain(response, data);
+        else if (desired_type.contains("text/html"))
+            send_html(response, data);
+        else
+            send_xml(response, data);
+    }
+    
+        private void send_xml(HttpServletResponse response, Object data) {
+        try {
+            XMLEncoder enc = new XMLEncoder(response.getOutputStream());
+            enc.writeObject(data.toString());
+            enc.close();
+        }
+        catch(IOException e) {
+            throw new HTTPException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
+    }
+    private void send_html(HttpServletResponse response, Object data) {
+        String html_start =
+            "<html><head><title>send_html response</title></head><body><div>";
+        String html_end = "</div></body></html>";
+        String html_doc = html_start + data.toString() + html_end;
+        send_plain(response, html_doc);
+    }
+
+    private void send_plain(HttpServletResponse response, Object data) {
+        try {
+            OutputStream out = response.getOutputStream();
+            out.write(data.toString().getBytes());
+            out.flush();
+        }
+        catch(IOException e) {
+            throw new HTTPException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
     }
     
     public static void main(String[] args){
