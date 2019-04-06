@@ -434,3 +434,25 @@ Apr 06, 2019 12:38:52 AM org.apache.catalina.startup.HostConfig deployWAR
 INFO: Deploying web application archive T:\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
 Apr 06, 2019 12:38:52 AM org.apache.catalina.startup.HostConfig deployWAR
 INFO: Deployment of web application archive T:\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 159 ms
+Apr 06, 2019 12:48:02 AM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 06, 2019 12:48:02 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive T:\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 06, 2019 12:48:02 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive T:\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 171 ms
+Apr 06, 2019 12:52:08 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 06, 2019 12:52:08 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Apr 06, 2019 12:52:08 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Apr 06, 2019 12:52:08 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 06, 2019 12:52:09 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Apr 06, 2019 12:52:09 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Apr 06, 2019 12:52:09 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Apr 06, 2019 12:52:09 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
