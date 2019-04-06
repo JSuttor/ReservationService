@@ -1,14 +1,4 @@
-Fri Apr 05 22:32:59 EDT 2019 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+Fri Apr 05 23:54:49 EDT 2019 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Fri Apr 05 22:33:06 EDT 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0169-f07d-f17a-fffff697fe18 
-on database directory T:\ReservationService\database\reservationDB with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
-Loaded from file:/T:/ReservationService/database/db/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_181-b13
-user.dir=T:\ReservationService\database\db
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
-derby.system.home=T:\ReservationService\database
-Database Class Loader started - derby.database.classpath=''
+Fri Apr 05 23:59:39 EDT 2019: Shutting down Derby engine
+----------------------------------------------------------------

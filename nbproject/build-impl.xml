@@ -1060,7 +1060,7 @@ is divided into following sections:
     <mkdir dir="./build/classes/temp/services/database_service"/>
     <copy file="./build/classes/services/database_service/DBService.class"
     tofile="./build/classes/temp/services/database_service/DBService.class"/>
-    <war webxml="./src/services/database_service/web.xml" destfile="./dbServ.war">
+    <war webxml="./src/services/database_service/web.xml" destfile="./database_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
     </target>
