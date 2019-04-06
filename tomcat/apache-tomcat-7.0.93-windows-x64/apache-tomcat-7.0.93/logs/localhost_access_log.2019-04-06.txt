@@ -54,3 +54,12 @@
 127.0.0.1 - - [06/Apr/2019:00:52:06 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [06/Apr/2019:00:52:07 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [06/Apr/2019:00:52:08 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2019:01:11:27 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2019:01:11:27 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2019:01:11:27 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2019:01:11:27 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2019:01:11:30 -0400] "GET /database_service/dbServ?optionType=flight&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 109
+127.0.0.1 - - [06/Apr/2019:01:44:23 -0400] "GET /database_service/dbServ?optionType=flight&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 165
+127.0.0.1 - - [06/Apr/2019:01:48:08 -0400] "GET /database_service/dbServ?optionType=flight&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 165
+127.0.0.1 - - [06/Apr/2019:01:49:31 -0400] "GET /database_service/dbServ?optionType=flight&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 165
+127.0.0.1 - - [06/Apr/2019:01:50:55 -0400] "GET /database_service/dbServ?optionType=flight&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 165

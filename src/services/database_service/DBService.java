@@ -148,16 +148,32 @@ public class DBService extends HttpServlet{
         
         try {
             int guestNum = Integer.parseInt(guests.trim());
-            Object resp;
-            if(optionType.trim().equals("flight"))
-                resp = fetchFlightData(cityTo, cityFrom, guestNum);
-            else if(optionType.trim().equals("hotel"))
-                resp = fetchHotelData(cityTo, guestNum);
-            else if(optionType.trim().equals("vehicle"))
-                resp = fetchVehicleData(cityTo, guestNum);
+            String resp = "";
+            List<FlightOption> fOptionList = new ArrayList<FlightOption>();
+            List<HotelOption> hOptionList = new ArrayList<HotelOption>();
+            List<VehicleOption> vOptionList = new ArrayList<VehicleOption>();
+            if(optionType.trim().equals("flight")){
+                fOptionList = fetchFlightData(cityTo, cityFrom, guestNum);
+                for(FlightOption fO : fOptionList){
+                    resp += fO.toString();
+                }
+                System.out.println(resp);
+            }
+            else if(optionType.trim().equals("hotel")){
+                hOptionList = fetchHotelData(cityTo, guestNum);
+                for(HotelOption hO : hOptionList){
+                    resp += hO.toString();
+                }
+            }
+            else if(optionType.trim().equals("vehicle")){
+                vOptionList = fetchVehicleData(cityTo, guestNum);
+                for(VehicleOption vO : vOptionList){
+                    resp += vO.toString();
+                }
+            }
             else
                 resp = "not a valid input";
-            send_typed_response(request, response, resp);
+           send_typed_response(request, response, resp);
         }
         catch(NumberFormatException e) {
             send_typed_response(request, response, -1);
