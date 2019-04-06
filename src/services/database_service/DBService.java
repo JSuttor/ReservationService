@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package database_service;
+package services.database_service;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -15,10 +15,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.List;
-import containers.AbstractOption;
-import containers.FlightOption;
-import containers.HotelOption;
-import containers.VehicleOption;
 import java.beans.XMLEncoder;
 import java.io.IOException;
 import java.io.OutputStream;
