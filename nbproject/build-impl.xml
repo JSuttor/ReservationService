@@ -1054,6 +1054,16 @@ is divided into following sections:
         <fail unless="run.class">Must select one file in the IDE or set run.class</fail>
         <j2seproject1:java classname="${run.class}" classpath="${run.test.classpath}"/>
     </target>
+    
+    <target depends="init,compile" name="RunHttpServlet">
+    <!--<copy .class files to folder WEB-INF/classes/>-->
+    <mkdir dir="./build/classes/temp/services/database_service"/>
+    <copy file="./build/classes/services/database_service/DBService.class"
+    tofile="./build/classes/temp/services/database_service/DBService.class"/>
+    <war webxml="./src/services/database_service/web.xml" destfile="./dbServ.war">
+        <classes dir="./build/classes/temp"/>
+    </war>
+    </target>
     <!--
                 =================
                 DEBUGGING SECTION
