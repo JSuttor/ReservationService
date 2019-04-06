@@ -34,4 +34,11 @@ public class HotelOption extends AbstractOption{
     public String getCityTo(){
         return cityTo;
     }
+    
+    @Override
+    public String toString(){
+        String result = "hotel,availability:" + availability + ",name:" + name + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
+        
+        return result;
+    }
 }

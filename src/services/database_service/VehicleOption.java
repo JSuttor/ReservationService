@@ -37,4 +37,11 @@ public class VehicleOption extends AbstractOption{
     public String getCityTo(){
         return cityTo;
     }
+    @Override
+    public String toString(){
+        String result = "vehicle,availability:" + availability + ",make:" + make + ",model:" + model + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
+        
+        return result;
+    }
+    
 }

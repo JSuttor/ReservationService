@@ -20,4 +20,8 @@ public abstract class AbstractOption {
     String make;
     String model;
     int time;
+    
+    @Override
+    abstract public String toString();
+    
 }

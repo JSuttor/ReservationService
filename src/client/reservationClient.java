@@ -11,6 +11,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import services.database_service.FlightOption;
+import services.database_service.AbstractOption;
+import services.database_service.HotelOption;
+import services.database_service.VehicleOption;
 
 /**
  *
@@ -62,6 +66,10 @@ public class reservationClient {
             while ((next = reader.readLine()) != null)
                 xml += next;
             System.out.println(xml);
+            //String[] parts = xml.split(", ");
+            //for(String part : parts){
+               
+            //}
         }
         catch(IOException e) { System.err.println(e); }
     }

@@ -33,4 +33,12 @@ public class FlightOption extends AbstractOption{
     public String getCityFrom(){
         return cityFrom;
     }
+    
+    @Override
+    public String toString(){
+        String result = "flight,availability:" + availability + ",time:" + time + ",price:" + price + ",cityTo:" + cityTo + ",cityFrom:" + cityFrom + "|";
+        
+        return result;
+    }
+    
 }
