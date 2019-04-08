@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package services.database_service;
+package service.vehicle_service;
+
 
 /**
  *

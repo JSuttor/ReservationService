@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package services.database_service;
+package services.hotel_service;
+
+import services.database_service.*;
 
 /**
  *

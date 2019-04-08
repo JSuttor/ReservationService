@@ -5,6 +5,9 @@
  */
 package services.database_service;
 
+import services.hotel_service.HotelOption;
+import service.vehicle_service.VehicleOption;
+import services.flight_service.FlightOption;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
