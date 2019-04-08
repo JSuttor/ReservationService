@@ -22,7 +22,7 @@ import services.database_service.VehicleOption;
  */
 public class reservationClient {
     
-    private static final String url = "http://localhost:8080/database_service/dbServ";
+    private static final String url = "http://localhost:8081/database_service/dbServ";
     /**
      * Creates new form CalculatorClient
      */
