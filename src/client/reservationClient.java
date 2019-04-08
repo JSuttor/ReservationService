@@ -11,10 +11,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import services.database_service.FlightOption;
-import services.database_service.AbstractOption;
-import services.database_service.HotelOption;
-import services.database_service.VehicleOption;
+//import services.database_service.FlightOption;
+//import services.database_service.AbstractOption;
+//import services.database_service.HotelOption;
+//import services.database_service.VehicleOption;
 
 /**
  *
@@ -26,7 +26,6 @@ public class reservationClient {
     /**
      * Creates new form CalculatorClient
      */
-
     
     private void sendRequest(String optionType, String cityTo, String cityFrom, int guests){
         try {

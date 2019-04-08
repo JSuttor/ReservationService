@@ -3,30 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package services.database_service;
+package services.hotel_service;
+
 
 /**
  *
  * @author docto
  */
-public class VehicleOption extends AbstractOption{
-    public VehicleOption(int availability, String make, String model, int guests, String cityTo, int price){
+public class HotelOption extends AbstractOption{
+  
+    public HotelOption(int availability, String name, int guests, String cityTo, int price){
         this.guests = guests;
         this.availability = availability;
         this.cityTo = cityTo;
         this.price = price;
-        this.make = make;
-        this.model = model;
+        this.name = name;
     }
     
     public int getAvailability(){
         return availability;
     }
-    public String getMake(){
-        return make;
-    }
-    public String getModel(){
-        return model;
+    public String getName(){
+        return name;
     }
     public int getGuests(){
         return guests;
@@ -37,11 +35,11 @@ public class VehicleOption extends AbstractOption{
     public String getCityTo(){
         return cityTo;
     }
+    
     @Override
     public String toString(){
-        String result = "vehicle,availability:" + availability + ",make:" + make + ",model:" + model + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
+        String result = "hotel,availability:" + availability + ",name:" + name + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
         
         return result;
     }
-    
 }
