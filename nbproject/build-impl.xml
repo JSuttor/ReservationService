@@ -1067,8 +1067,8 @@ is divided into following sections:
     <copy file="./build/classes/services/hotel_service/HotelOption.class"
     tofile="./build/classes/temp/services/hotel_service/HotelOption.class"/>
     
-    <copy file="./build/classes/services/vehicle_service/VehicleOption.class"
-    tofile="./build/classes/temp/services/vehicle_service/VehicleOption.class"/>
+<!--    <copy file="./build/classes/services/vehicle_service/VehicleOption.class"
+    tofile="./build/classes/temp/services/vehicle_service/VehicleOption.class"/>-->
     
     <copy file="./build/classes/services/database_service/AbstractOption.class"
     tofile="./build/classes/temp/services/database_service/AbstractOption.class"/>
@@ -1079,8 +1079,8 @@ is divided into following sections:
     <copy file="./build/classes/services/hotel_service/AbstractOption.class"
     tofile="./build/classes/temp/services/hotel_service/AbstractOption.class"/>
     
-    <copy file="./build/classes/services/vehicle_service/AbstractOption.class"
-    tofile="./build/classes/temp/services/vehicle_service/AbstractOption.class"/>
+    <!--<copy file="./build/classes/services/vehicle_service/AbstractOption.class"-->
+    <!--tofile="./build/classes/temp/services/vehicle_service/AbstractOption.class"/>-->
     
     <war webxml="./src/services/database_service/web.xml" destfile="./database_service.war">
         <classes dir="./build/classes/temp"/>
