@@ -1061,7 +1061,11 @@ is divided into following sections:
     <copy file="./build/classes/services/database_service/DBService.class"
     tofile="./build/classes/temp/services/database_service/DBService.class"/>
     
-    <copy file="./build/classes/temp/services/flight_service/FlightOption.class"
+    <mkdir dir="./build/classes/temp/services/flight_service"/>
+    <copy file="./build/classes/services/flight_service/FlightService.class"
+    tofile="./build/classes/temp/services/flight_service/FlightService.class"/>
+    
+    <copy file="./build/classes/services/flight_service/FlightOption.class"
     tofile="./build/classes/temp/services/flight_service/FlightOption.class"/>
     
     <copy file="./build/classes/services/hotel_service/HotelOption.class"

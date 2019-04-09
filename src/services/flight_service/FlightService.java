@@ -80,9 +80,9 @@ public class FlightService extends HttpServlet {
     
     public List<FlightOption> fetchFlightData(String cityTo, String cityFrom, int guests){
         List<FlightOption> optionList = new ArrayList<FlightOption>();
-        FlightOption FO = new FlightOption();
+        FlightService FS = new FlightService();
         
-        FO.sendRequest("flight", cityTo, cityFrom, guests);
+        FS.sendRequest("flight", cityTo, cityFrom, guests);
         
         
         return optionList;

@@ -9,7 +9,7 @@
     <servlet>
         <servlet-name>Flight</servlet-name>
         <servlet-class>
-          services.flight_service.FService
+          services.flight_service.FlightService
         </servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
