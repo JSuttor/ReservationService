@@ -5,16 +5,16 @@
      xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
          http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
          version="2.4">
-  <display-name>DB Servlet</display-name>
+  <display-name>Vehicle Servlet</display-name>
     <servlet>
-        <servlet-name>db</servlet-name>
+        <servlet-name>Vehicle</servlet-name>
         <servlet-class>
-          services.database_service.DBService
+          services.vehicle_service.VehicleService
         </servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>db</servlet-name>
-        <url-pattern>/dbServ</url-pattern>
+        <servlet-name>Vehicle</servlet-name>
+        <url-pattern>/VServ</url-pattern>
     </servlet-mapping>
 </web-app>

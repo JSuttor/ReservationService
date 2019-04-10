@@ -21,8 +21,8 @@ import java.net.URL;
  * @author JTS5732
  */
 public class reservationClient {
-    
     private static final String url = "http://localhost:8080/flight_service/FServ";
+    private static final String urlV = "http://localhost:8080/vehicle_service/VServ";
     /**
      * Creates new form CalculatorClient
      */
@@ -31,6 +31,20 @@ public class reservationClient {
         try {
             HttpURLConnection conn = null;
             String requestURL = url + "?cityTo=" + cityTo + "&cityFrom=" + cityFrom + "&guests=" + guests;
+            System.out.println(requestURL);
+            conn = get_connection(requestURL, "GET");
+            conn.addRequestProperty("accept", "text/plain");
+            conn.connect();
+            get_response(conn);
+        }
+        catch(IOException e) { System.err.println(e); }
+        catch(NullPointerException e) { System.err.println(e); }
+    }
+    
+    private void sendRequestV(String cityTo, int guests){
+        try {
+            HttpURLConnection conn = null;
+            String requestURL = urlV + "?cityTo=" + cityTo + "&guests=" + guests;
             System.out.println(requestURL);
             conn = get_connection(requestURL, "GET");
             conn.addRequestProperty("accept", "text/plain");
@@ -76,5 +90,6 @@ public class reservationClient {
         public static void main(String args[]) {
             reservationClient rc = new reservationClient();
             rc.sendRequest("Erie", "Pittsburgh", 3);
+            rc.sendRequestV("Erie", 3);
         }
 }
