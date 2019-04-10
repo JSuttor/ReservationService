@@ -137,6 +137,7 @@ public class DBService extends HttpServlet{
         return optionList;
     }
     
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         String optionType = request.getParameter("optionType");
         String cityTo = request.getParameter("cityTo");
@@ -175,10 +176,8 @@ public class DBService extends HttpServlet{
         }
         catch(NumberFormatException e) {
             send_typed_response(request, response, -1);
-        }
-  
+        }  
     }
-
     
     private void send_typed_response(HttpServletRequest request,
                                      HttpServletResponse response,
@@ -194,7 +193,7 @@ public class DBService extends HttpServlet{
             send_xml(response, data);
     }
     
-        private void send_xml(HttpServletResponse response, Object data) {
+    private void send_xml(HttpServletResponse response, Object data) {
         try {
             XMLEncoder enc = new XMLEncoder(response.getOutputStream());
             enc.writeObject(data.toString());
@@ -204,6 +203,7 @@ public class DBService extends HttpServlet{
             throw new HTTPException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
     }
+    
     private void send_html(HttpServletResponse response, Object data) {
         String html_start =
             "<html><head><title>send_html response</title></head><body><div>";

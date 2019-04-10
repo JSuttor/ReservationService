@@ -29,11 +29,10 @@ import javax.xml.ws.http.HTTPException;
 
 
 public class FlightService extends HttpServlet {
-     private static final String url = "http://localhost:8080/database_service/dbServ";
+    private HttpServletRequest request;
+    private HttpServletResponse response;    
+    private static final String url = "http://localhost:8080/database_service/dbServ";    
      
-    HttpServletRequest request;
-    HttpServletResponse response;
-    
     private void sendRequest(String optionType, String cityTo, String cityFrom, int guests){
         try {
             HttpURLConnection conn = null;
@@ -47,8 +46,7 @@ public class FlightService extends HttpServlet {
         catch(IOException e) { System.err.println(e); }
         catch(NullPointerException e) { System.err.println(e); }
     }
-    
-    
+       
     private HttpURLConnection get_connection(String url_string, String verb) {
         HttpURLConnection conn = null;
         try {
@@ -66,6 +64,8 @@ public class FlightService extends HttpServlet {
     private void get_response(HttpURLConnection conn) {
         try {
             String xml = "";
+            
+            //Convert to BufferedReader
             BufferedReader reader =
                 new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String next = null;
@@ -77,6 +77,7 @@ public class FlightService extends HttpServlet {
         catch(IOException e) { System.err.println(e); }
     }
 
+    //Called by client and sends request
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         this.request = request;
         this.response = response;
@@ -84,22 +85,18 @@ public class FlightService extends HttpServlet {
         String cityTo = request.getParameter("cityTo");
         String cityFrom = request.getParameter("cityFrom");
         String guests = request.getParameter("guests");
+        int guestNum = Integer.parseInt(guests.trim());
         String type = request.getHeader("accept");
         
-        try {
-            int guestNum = Integer.parseInt(guests.trim());
-            List<FlightOption> fOptionList = new ArrayList<FlightOption>();
-            sendRequest("flight", cityTo, cityFrom, guestNum);
-            
+        try {  
+            sendRequest("flight", cityTo, cityFrom, guestNum);           
         }
         catch(NumberFormatException e) {
             send_typed_response(request, response, -1);
         }
     }
         
-    private void send_typed_response(HttpServletRequest request,
-                                     HttpServletResponse response,
-                                     Object data) {
+    private void send_typed_response(HttpServletRequest request, HttpServletResponse response, Object data) {
         String desired_type = request.getHeader("accept");
 
         // If client requests plain text or HTML, send it; else XML.
