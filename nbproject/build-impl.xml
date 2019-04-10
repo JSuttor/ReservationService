@@ -1065,6 +1065,10 @@ is divided into following sections:
     <copy file="./build/classes/services/flight_service/FlightService.class"
     tofile="./build/classes/temp/services/flight_service/FlightService.class"/>
     
+    <mkdir dir="./build/classes/temp/services/hotel_service"/>
+    <copy file="./build/classes/services/hotel_service/HotelService.class"
+    tofile="./build/classes/temp/services/hotel_service/HotelService.class"/>
+    
     <copy file="./build/classes/services/flight_service/FlightOption.class"
     tofile="./build/classes/temp/services/flight_service/FlightOption.class"/>
     
@@ -1099,6 +1103,10 @@ is divided into following sections:
     </war>
     
     <war webxml="./src/services/vehicle_service/web.xml" destfile="./vehicle_service.war">
+        <classes dir="./build/classes/temp"/>
+    </war>
+
+    <war webxml="./src/services/hotel_service/web.xml" destfile="./hotel_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
     </target>
