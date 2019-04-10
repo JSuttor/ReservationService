@@ -1,0 +1,8 @@
+127.0.0.1 - - [10/Apr/2019:00:18:46 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2019:00:18:46 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2019:00:18:46 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2019:00:18:46 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [10/Apr/2019:00:18:54 -0400] "GET /database_service/dbServ?optionType=vehicle&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 88
+127.0.0.1 - - [10/Apr/2019:00:18:54 -0400] "GET /vehicle_service/VServ?cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 88
+127.0.0.1 - - [10/Apr/2019:00:53:41 -0400] "GET /database_service/dbServ?optionType=vehicle&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 88
+127.0.0.1 - - [10/Apr/2019:00:53:41 -0400] "GET /vehicle_service/VServ?cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 88
