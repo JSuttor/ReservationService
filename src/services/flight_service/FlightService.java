@@ -31,6 +31,9 @@ import javax.xml.ws.http.HTTPException;
 public class FlightService extends HttpServlet {
      private static final String url = "http://localhost:8080/database_service/dbServ";
      
+    HttpServletRequest request;
+    HttpServletResponse response;
+    
     private void sendRequest(String optionType, String cityTo, String cityFrom, int guests){
         try {
             HttpURLConnection conn = null;
@@ -46,7 +49,7 @@ public class FlightService extends HttpServlet {
     }
     
     
-        private HttpURLConnection get_connection(String url_string, String verb) {
+    private HttpURLConnection get_connection(String url_string, String verb) {
         HttpURLConnection conn = null;
         try {
             URL url = new URL(url_string);
@@ -69,28 +72,15 @@ public class FlightService extends HttpServlet {
             while ((next = reader.readLine()) != null)
                 xml += next;
             System.out.println(xml);
-            //String[] parts = xml.split(", ");
-            //for(String part : parts){
-               
-            //}
+            send_typed_response(request, response, xml);
         }
         catch(IOException e) { System.err.println(e); }
     }
-    
-    
-    public List<FlightOption> fetchFlightData(String cityTo, String cityFrom, int guests){
-        List<FlightOption> optionList = new ArrayList<FlightOption>();
-        FlightService FS = new FlightService();
-        
-        FS.sendRequest("flight", cityTo, cityFrom, guests);
-        
-        
-        return optionList;
-        
-    }
-    
-        public void doGet(HttpServletRequest request, HttpServletResponse response) {
-        String optionType = request.getParameter("optionType");
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+        this.request = request;
+        this.response = response;
+
         String cityTo = request.getParameter("cityTo");
         String cityFrom = request.getParameter("cityFrom");
         String guests = request.getParameter("guests");
@@ -98,25 +88,16 @@ public class FlightService extends HttpServlet {
         
         try {
             int guestNum = Integer.parseInt(guests.trim());
-            String resp = "";
             List<FlightOption> fOptionList = new ArrayList<FlightOption>();
-            if(optionType.trim().equals("flight")){
-                fOptionList = fetchFlightData(cityTo, cityFrom, guestNum);
-                for(FlightOption fO : fOptionList){
-                    resp += fO.toString();
-                }
-                System.out.println(resp);
-            }
-            else
-                resp = "not a valid input";
-           send_typed_response(request, response, resp);
+            sendRequest("flight", cityTo, cityFrom, guestNum);
+            
         }
         catch(NumberFormatException e) {
             send_typed_response(request, response, -1);
         }
-   }
+    }
         
-        private void send_typed_response(HttpServletRequest request,
+    private void send_typed_response(HttpServletRequest request,
                                      HttpServletResponse response,
                                      Object data) {
         String desired_type = request.getHeader("accept");

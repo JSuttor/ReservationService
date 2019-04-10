@@ -22,15 +22,15 @@ import java.net.URL;
  */
 public class reservationClient {
     
-    private static final String url = "http://localhost:8080/database_service/dbServ";
+    private static final String url = "http://localhost:8080/flight_service/FServ";
     /**
      * Creates new form CalculatorClient
      */
     
-    private void sendRequest(String optionType, String cityTo, String cityFrom, int guests){
+    private void sendRequest(String cityTo, String cityFrom, int guests){
         try {
             HttpURLConnection conn = null;
-            String requestURL = url + "?optionType=" + optionType + "&cityTo=" + cityTo + "&cityFrom=" + cityFrom + "&guests=" + guests;
+            String requestURL = url + "?cityTo=" + cityTo + "&cityFrom=" + cityFrom + "&guests=" + guests;
             System.out.println(requestURL);
             conn = get_connection(requestURL, "GET");
             conn.addRequestProperty("accept", "text/plain");
@@ -75,6 +75,6 @@ public class reservationClient {
     
         public static void main(String args[]) {
             reservationClient rc = new reservationClient();
-            rc.sendRequest("flight", "Erie", "Pittsburgh", 3);
+            rc.sendRequest("Erie", "Pittsburgh", 3);
         }
 }

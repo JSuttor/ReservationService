@@ -76,12 +76,7 @@ public class DBService extends HttpServlet{
                 FO = new FlightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
                 optionList.add(FO);
             }
-            
-            /*
-            
-            
-            */
-            
+                        
         } catch (SQLException err) {
             System.out.println(err.getMessage());
         }
