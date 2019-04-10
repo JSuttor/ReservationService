@@ -1,16 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package services.vehicle_service;
 
-
-/**
- *
- * @author docto
- */
-public class VehicleOption extends AbstractOption{
+public class VehicleOption {
+    public int guests;
+    String cityTo;
+    public int availability;
+    public String name;
+    public int price;
+    public String make;
+    public String model;
+    
     public VehicleOption(int availability, String make, String model, int guests, String cityTo, int price){
         this.guests = guests;
         this.availability = availability;

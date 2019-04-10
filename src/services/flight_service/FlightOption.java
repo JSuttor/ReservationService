@@ -1,30 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package services.flight_service;
 
-import java.beans.XMLEncoder;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.xml.ws.http.HTTPException;
-
-
-/**
- *
- * @author docto
- */
-public class FlightOption extends AbstractOption{
+public class FlightOption {
+    public int guests;
+    String cityTo;
+    public String cityFrom;
+    public int flightTime;
+    public int availability;
+    public String name;
+    public int price;
+    public String make;
+    public String model;
+    public int time;
+    
     public FlightOption(int availability, String cityTo, String cityFrom, int price, int time){
         this.availability = availability;
         this.cityTo = cityTo;
