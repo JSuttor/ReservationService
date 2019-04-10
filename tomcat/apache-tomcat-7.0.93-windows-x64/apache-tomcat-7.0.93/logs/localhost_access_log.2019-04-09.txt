@@ -32,3 +32,11 @@
 127.0.0.1 - admin [09/Apr/2019:19:30:56 -0400] "GET /manager/text/list HTTP/1.1" 200 313
 127.0.0.1 - admin [09/Apr/2019:19:30:56 -0400] "GET /manager/text/list HTTP/1.1" 200 313
 127.0.0.1 - - [09/Apr/2019:19:30:56 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [09/Apr/2019:20:23:04 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [09/Apr/2019:20:23:04 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [09/Apr/2019:20:23:04 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [09/Apr/2019:20:23:04 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [09/Apr/2019:20:23:22 -0400] "GET /database_service/dbServ?optionType=flight&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 161
+127.0.0.1 - - [09/Apr/2019:20:23:40 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [09/Apr/2019:20:23:40 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [09/Apr/2019:20:23:40 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
