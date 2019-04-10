@@ -22,7 +22,7 @@ import java.net.URL;
  */
 public class reservationClient {
     
-    private static final String url = "http://localhost:8080/hotel_service/HServ";
+    private static final String url = "http://localhost:8080/vehicle_service/VServ";
     
     /**
      * Creates new form CalculatorClient

@@ -33,10 +33,10 @@ public class VehicleService extends HttpServlet {
     private HttpServletResponse response;    
     private static final String url = "http://localhost:8080/database_service/dbServ";    
      
-    private void sendRequest(String optionType, String cityTo, int guests){
+    private void sendRequest(String optionType, String cityTo, String cityFrom, int guests){
         try {
             HttpURLConnection conn = null;
-            String requestURL = url + "?optionType=" + optionType + "&cityTo=" + cityTo + "&guests=" + guests;
+            String requestURL = url + "?optionType=" + optionType + "&cityTo=" + cityTo + "&cityFrom=" + cityFrom + "&guests=" + guests;
             System.out.println(requestURL);
             conn = get_connection(requestURL, "GET");
             conn.addRequestProperty("accept", "text/plain");
@@ -84,11 +84,12 @@ public class VehicleService extends HttpServlet {
 
         String cityTo = request.getParameter("cityTo");
         String guests = request.getParameter("guests");
+        String cityFrom = request.getParameter("cityFrom");
         int guestNum = Integer.parseInt(guests.trim());
         String type = request.getHeader("accept");
         
         try {  
-            sendRequest("vehicle", cityTo, guestNum);           
+            sendRequest("vehicle", cityTo, cityFrom, guestNum);           
         }
         catch(NumberFormatException e) {
             send_typed_response(request, response, -1);
