@@ -11,16 +11,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
-//import services.database_service.FlightOption;
-//import services.database_service.AbstractOption;
-//import services.database_service.HotelOption;
-//import services.database_service.VehicleOption;
 
-/**
- *
- * @author JTS5732
- */
 public class reservationClient {
     
 private static final String url = "http://localhost:8080/orchestrator_service/OServ";  

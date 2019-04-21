@@ -5,19 +5,9 @@
  */
 package services.orchestrator_service;
 
-import services.hotel_service.HotelOption;
-import services.vehicle_service.VehicleOption;
-import services.flight_service.FlightOption;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.ResultSet;
-import java.util.List;
 import java.beans.XMLEncoder;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,9 +16,6 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.xml.ws.http.HTTPException;
 
 /**
@@ -57,7 +44,6 @@ public class OrchestratorService extends HttpServlet{
         String cityFrom = request.getParameter("cityFrom");
         String guests = request.getParameter("guests");
         int guestNum = Integer.parseInt(guests.trim());
-        String type = request.getHeader("accept");
         
         try {  
             url = vurl;
@@ -104,9 +90,9 @@ public class OrchestratorService extends HttpServlet{
         
     private void send_xml(HttpServletResponse response, Object data) {
         try {
-            XMLEncoder enc = new XMLEncoder(response.getOutputStream());
-            enc.writeObject(data.toString());
-            enc.close();
+            try (XMLEncoder enc = new XMLEncoder(response.getOutputStream())) {
+                enc.writeObject(data.toString());
+            }
         }
         catch(IOException e) {
             throw new HTTPException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -116,16 +102,14 @@ public class OrchestratorService extends HttpServlet{
     
     private void sendRequest(String cityTo, String cityFrom, int guests){
         try {
-            HttpURLConnection conn = null;
+            HttpURLConnection conn;
             String requestURL = url + "?cityTo=" + cityTo + "&cityFrom=" + cityFrom + "&guests=" + guests;
-            //System.out.println(requestURL);
             conn = get_connection(requestURL, "GET");
             conn.addRequestProperty("accept", "text/plain");
             conn.connect();
             get_response(conn);
         }
-        catch(IOException e) { System.err.println(e); }
-        catch(NullPointerException e) { System.err.println(e); }
+        catch(IOException | NullPointerException e) { System.err.println(e); }
     }
 
     private String formatResp(String resp){
@@ -170,7 +154,7 @@ public class OrchestratorService extends HttpServlet{
                         cityFrom = value[1];
                     }
                 }
-                if(cityTo.equals(this.cityTo)){
+                if(cityTo.equals(OrchestratorService.cityTo)){
                     results += "  Flight to:" + " $endl";
                 }
                 else{
@@ -238,8 +222,8 @@ public class OrchestratorService extends HttpServlet{
     private HttpURLConnection get_connection(String url_string, String verb) {
         HttpURLConnection conn = null;
         try {
-            URL url = new URL(url_string);
-            conn = (HttpURLConnection) url.openConnection();
+            URL receivedURL = new URL(url_string);
+            conn = (HttpURLConnection) receivedURL.openConnection();
             conn.setRequestMethod(verb);
             conn.setDoInput(true);
             conn.setDoOutput(true);
@@ -256,10 +240,10 @@ public class OrchestratorService extends HttpServlet{
             i++;
             BufferedReader reader =
                 new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String next = null;
-            while ((next = reader.readLine()) != null)
-            xml += next;
-            System.out.println("hello " + xml);
+            String next;
+            
+            while ((next = reader.readLine()) != null) xml += next;
+            
             if(urlStr.contains("FServ")){
                 String resp = formatResp(xml);
                 send_typed_response(request, response, resp);
