@@ -1,6 +1,7 @@
 package services.flight_service;
 
 public class FlightOption {
+    int flightID;
     public int guests;
     String cityTo;
     public String cityFrom;
@@ -12,7 +13,8 @@ public class FlightOption {
     public String model;
     public int time;
     
-    public FlightOption(int availability, String cityTo, String cityFrom, int price, int time){
+    public FlightOption(int flightID, int availability, String cityTo, String cityFrom, int price, int time){
+        this.flightID = flightID;
         this.availability = availability;
         this.cityTo = cityTo;
         this.cityFrom = cityFrom;
@@ -40,7 +42,7 @@ public class FlightOption {
     
     @Override
     public String toString(){
-        String result = "flight,availability:" + availability + ",time:" + time + ",price:" + price + ",cityTo:" + cityTo + ",cityFrom:" + cityFrom + "|";
+        String result = "flight,ID:" + flightID + ",availability:" + availability + ",time:" + time + ",price:" + price + ",cityTo:" + cityTo + ",cityFrom:" + cityFrom + "|";
         
         return result;
     }

@@ -67,12 +67,12 @@ public class OrchestratorService extends HttpServlet{
         nums = nums.replace('[', '\0');
         nums = nums.replace(']', '\0');
         String[ ] parts = nums.split(", ");
-        List<Integer> list = new ArrayList<Integer>();
+
         for (String next : parts) {
             int n = Integer.parseInt(next.trim());
 
         }
-        send_typed_response(request, response, list + " added.");
+        send_typed_response(request, response, " added.");
     }
 
     
@@ -141,6 +141,7 @@ public class OrchestratorService extends HttpServlet{
         String name = "";
         String make = "";
         String model = "";
+        int id = 0;
         
         int flightNum = 0;
         int hotelNum = 0;
@@ -157,18 +158,21 @@ public class OrchestratorService extends HttpServlet{
                 for(int i = 1; i < fields.length; i++){
                     String[] value = fields[i].split(":");
                     if(i == 1){
-                        availability = Integer.parseInt(value[1]);
+                        id = Integer.parseInt(value[1]);
                     }
                     else if(i == 2){
-                        time = Integer.parseInt(value[1]);
+                        availability = Integer.parseInt(value[1]);
                     }
                     else if(i == 3){
-                        price = Integer.parseInt(value[1]);
+                        time = Integer.parseInt(value[1]);
                     }
                     else if(i == 4){
-                        cityTo = value[1];
+                        price = Integer.parseInt(value[1]);
                     }
                     else if(i == 5){
+                        cityTo = value[1];
+                    }
+                    else if(i == 6){
                         cityFrom = value[1];
                     }
                 }
@@ -178,7 +182,7 @@ public class OrchestratorService extends HttpServlet{
                 else{
                     results += "  Return Flight:" + " $endl";
                 }
-                results += "    Option " + flightNum + " From " + cityFrom + " to " + cityTo + " at " + time + "  Availability: " + availability + " seats" + " $endl";
+                results += "    Option " + id + " From " + cityFrom + " to " + cityTo + " at " + time + "  Availability: " + availability + " seats" + " $endl";
             }
             else if(fields[0].equals("hotel")){
                 if(hotelNum == 0){
@@ -188,38 +192,13 @@ public class OrchestratorService extends HttpServlet{
                 for(int i = 1; i < fields.length; i++){
                     String[] value = fields[i].split(":");
                     if(i == 1){
-                        availability = Integer.parseInt(value[1]);
+                        id = Integer.parseInt(value[1]);
                     }
                     else if(i == 2){
+                        availability = Integer.parseInt(value[1]);
+                    }
+                    else if(i == 3){
                         name = value[1];
-                    }
-                    else if(i == 3){
-                        guests = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 4){
-                        price = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 5){
-                        cityTo = value[1];
-                    }
-                }
-                results += "    Option " + hotelNum + " Hotel name: " + name + " in " + cityTo + " for up to " + guests + " guests.  Availability: " + availability + " rooms" + " $endl";
-            }
-            else{
-                if(vehicleNum == 0){
-                    results += "\nVehicles:" + " $endl";
-                }
-                vehicleNum++;
-                for(int i = 1; i < fields.length; i++){
-                    String[] value = fields[i].split(":");
-                    if(i == 1){
-                        availability = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 2){
-                        make = value[1];
-                    }
-                    else if(i == 3){
-                        model = value[1];
                     }
                     else if(i == 4){
                         guests = Integer.parseInt(value[1]);
@@ -231,7 +210,38 @@ public class OrchestratorService extends HttpServlet{
                         cityTo = value[1];
                     }
                 }
-                results += "    Option " + vehicleNum + " Type: " + make + " " + model + " in " + cityTo + ".  Seats " + guests + " passenger.  Availability: " + availability + " seats" + " $endl";
+                results += "    Option " + id + " Hotel name: " + name + " in " + cityTo + " for up to " + guests + " guests.  Availability: " + availability + " rooms" + " $endl";
+            }
+            else{
+                if(vehicleNum == 0){
+                    results += "\nVehicles:" + " $endl";
+                }
+                vehicleNum++;
+                for(int i = 1; i < fields.length; i++){
+                    String[] value = fields[i].split(":");
+                    if(i == 1){
+                        id = Integer.parseInt(value[1]);
+                    }
+                    else if(i == 2){
+                        availability = Integer.parseInt(value[1]);
+                    }
+                    else if(i == 3){
+                        make = value[1];
+                    }
+                    else if(i == 4){
+                        model = value[1];
+                    }
+                    else if(i == 5){
+                        guests = Integer.parseInt(value[1]);
+                    }
+                    else if(i == 6){
+                        price = Integer.parseInt(value[1]);
+                    }
+                    else if(i == 7){
+                        cityTo = value[1];
+                    }
+                }
+                results += "    Option " + id + " Type: " + make + " " + model + " in " + cityTo + ".  Seats " + guests + " passenger.  Availability: " + availability + " seats" + " $endl";
             }
         } 
         return results;

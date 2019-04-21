@@ -58,7 +58,7 @@ public class DBService extends HttpServlet{
             
             //process data from flight record
             while(rs.next()){
-                FO = new FlightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
+                FO = new FlightOption(rs.getInt("FlightID"), rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
                 optionList.add(FO);
             }
             
@@ -70,7 +70,7 @@ public class DBService extends HttpServlet{
             
             //process data from flight record
             while(rs.next()){
-                FO = new FlightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
+                FO = new FlightOption(rs.getInt("FlightID"), rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
                 optionList.add(FO);
             }
                         
@@ -97,7 +97,7 @@ public class DBService extends HttpServlet{
 
             //process data from hotel record
             while(rs.next()){
-                HO = new HotelOption(rs.getInt("AVAILABILITY"), rs.getString("HOTELNAME"), rs.getInt("MAXGUESTS"), rs.getString("CITY"), rs.getInt("PRICE"));
+                HO = new HotelOption(rs.getInt("RoomID"), rs.getInt("AVAILABILITY"), rs.getString("HOTELNAME"), rs.getInt("MAXGUESTS"), rs.getString("CITY"), rs.getInt("PRICE"));
                 optionList.add(HO);
             }
         }
@@ -123,7 +123,7 @@ public class DBService extends HttpServlet{
             
             //process data from hotel record
             while(rs.next()){
-                VO = new VehicleOption(rs.getInt("AVAILABILITY"), rs.getString("CARMAKE"), rs.getString("CARMODEL"), rs.getInt("MAXPASSENGERS"), rs.getString("CITY"), rs.getInt("PRICE"));
+                VO = new VehicleOption(rs.getInt("CarID"), rs.getInt("AVAILABILITY"), rs.getString("CARMAKE"), rs.getString("CARMODEL"), rs.getInt("MAXPASSENGERS"), rs.getString("CITY"), rs.getInt("PRICE"));
                 optionList.add(VO);
             }
         }

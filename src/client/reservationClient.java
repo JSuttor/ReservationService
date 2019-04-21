@@ -6,11 +6,14 @@
 package client;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class reservationClient {
     
@@ -29,12 +32,21 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
         catch(IOException e) { System.err.println(e); }
         catch(NullPointerException e) { System.err.println(e); }
     }
-    
-    private void sendPostRequest(String cityTo, String cityFrom, int guests){
-        HttpURLConnection conn = null;
-        conn = get_connection(url, "POST");
-        
-        
+
+    private void sendPostRequest(String payload) {
+        try {
+            HttpURLConnection conn = null;
+            conn = get_connection(url, "POST");
+            conn.setRequestProperty("accept", "text/xml");
+
+            DataOutputStream out = new DataOutputStream(conn.getOutputStream());
+            out.writeBytes(payload);
+            out.flush();
+            get_response(conn);
+        } catch (IOException ex) {
+            Logger.getLogger(reservationClient.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
     
     private HttpURLConnection get_connection(String url_string, String verb) {
