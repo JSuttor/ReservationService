@@ -58,6 +58,24 @@ public class OrchestratorService extends HttpServlet{
         }
     }
     
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        String nums = request.getParameter("nums");
+        if (nums == null)
+            throw new HTTPException(HttpServletResponse.SC_BAD_REQUEST);
+
+        // Extract the integers from a string such as: "[1, 2, 3]"
+        nums = nums.replace('[', '\0');
+        nums = nums.replace(']', '\0');
+        String[ ] parts = nums.split(", ");
+        List<Integer> list = new ArrayList<Integer>();
+        for (String next : parts) {
+            int n = Integer.parseInt(next.trim());
+
+        }
+        send_typed_response(request, response, list + " added.");
+    }
+
+    
     private void send_typed_response(HttpServletRequest request, HttpServletResponse response, Object data) {
         String desired_type = request.getHeader("accept");
 

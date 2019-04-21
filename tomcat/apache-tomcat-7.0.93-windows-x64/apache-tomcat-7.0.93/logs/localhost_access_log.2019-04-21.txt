@@ -212,6 +212,7 @@
 127.0.0.1 - - [21/Apr/2019:17:03:46 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [21/Apr/2019:17:03:46 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [21/Apr/2019:17:03:47 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+<<<<<<< Updated upstream
 127.0.0.1 - - [21/Apr/2019:17:26:12 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [21/Apr/2019:17:26:12 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [21/Apr/2019:17:26:12 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
@@ -233,3 +234,9 @@
 127.0.0.1 - - [21/Apr/2019:17:27:09 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [21/Apr/2019:17:27:09 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [21/Apr/2019:17:27:09 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+=======
+127.0.0.1 - - [21/Apr/2019:17:31:39 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [21/Apr/2019:17:31:39 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [21/Apr/2019:17:31:39 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [21/Apr/2019:17:31:39 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+>>>>>>> Stashed changes

@@ -29,6 +29,14 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
         catch(IOException e) { System.err.println(e); }
         catch(NullPointerException e) { System.err.println(e); }
     }
+    
+    private void sendPostRequest(String cityTo, String cityFrom, int guests){
+        HttpURLConnection conn = null;
+        conn = get_connection(url, "POST");
+        
+        
+    }
+    
     private HttpURLConnection get_connection(String url_string, String verb) {
         HttpURLConnection conn = null;
         try {
