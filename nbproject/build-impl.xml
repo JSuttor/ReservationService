@@ -1061,6 +1061,10 @@ is divided into following sections:
     <copy file="./build/classes/services/database_service/DBService.class"
     tofile="./build/classes/temp/services/database_service/DBService.class"/>
     
+    <mkdir dir="./build/classes/temp/services/orchestrator_service"/>
+    <copy file="./build/classes/services/orchestrator_service/OrchestratorService.class"
+    tofile="./build/classes/temp/services/orchestrator_service/OrchestratorService.class"/>
+    
     <mkdir dir="./build/classes/temp/services/flight_service"/>
     <copy file="./build/classes/services/flight_service/FlightService.class"
     tofile="./build/classes/temp/services/flight_service/FlightService.class"/>
@@ -1081,20 +1085,12 @@ is divided into following sections:
     
     <copy file="./build/classes/services/vehicle_service/VehicleOption.class"
     tofile="./build/classes/temp/services/vehicle_service/VehicleOption.class"/>
-    
-    <copy file="./build/classes/services/database_service/AbstractOption.class"
-    tofile="./build/classes/temp/services/database_service/AbstractOption.class"/>
-    
-    <copy file="./build/classes/services/flight_service/AbstractOption.class"
-    tofile="./build/classes/temp/services/flight_service/AbstractOption.class"/>
-    
-    <copy file="./build/classes/services/hotel_service/AbstractOption.class"
-    tofile="./build/classes/temp/services/hotel_service/AbstractOption.class"/>
-    
-    <copy file="./build/classes/services/vehicle_service/AbstractOption.class"
-    tofile="./build/classes/temp/services/vehicle_service/AbstractOption.class"/>
-    
+        
     <war webxml="./src/services/database_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war">
+        <classes dir="./build/classes/temp"/>
+    </war>
+    
+    <war webxml="./src/services/orchestrator_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
     
