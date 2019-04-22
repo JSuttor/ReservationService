@@ -16,6 +16,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
+
 @WebServiceClient(name = "Service", targetNamespace = "http://ChristianRosalesTest.com", wsdlLocation = "file:/C:/Users/CJR5662/Downloads/ReservationService/src/services/login_service/Login.wsdl")
 public class Service
     extends javax.xml.ws.Service
