@@ -5,17 +5,22 @@
  */
 package services.orchestrator_service;
 
+import client.reservationClient;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.beans.XMLEncoder;
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.ws.http.HTTPException;
 
 /**
@@ -59,40 +64,67 @@ public class OrchestratorService extends HttpServlet{
     }
     
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        String nums = request.getParameter("nums");
-        if (nums == null)
+        String entry = request.getParameter("entry");
+        if (entry == null)
             throw new HTTPException(HttpServletResponse.SC_BAD_REQUEST);
 
         // Extract the integers from a string such as: "[1, 2, 3]"
-        nums = nums.replace('[', '\0');
-        nums = nums.replace(']', '\0');
-        String[ ] parts = nums.split(", ");
 
+        String[ ] parts = entry.split(",");
+        String message = "";
+        int i = 0;
         for (String next : parts) {
-            int n = Integer.parseInt(next.trim());
-
+            next = next.trim();
+            if(i == 0){
+                url = vurl;
+                message = next;
+                sendPostRequest(message);
+                message = "";
+            }
+            else if(i == 1){
+                url = hurl;
+                message = next;
+                sendPostRequest(message);
+                message = "";
+            }
+            else if(i == 2){
+                message = next;
+            }
+            else if(i == 3){
+                url = furl;
+                message += ("," + next);
+                System.out.println(message);
+                sendPostRequest(message);
+                message = "";
+            }
+            i++;
         }
-        send_typed_response(request, response, " added.");
+        String resp = "";
+        send_typed_response(request, response, resp);
+    }
+    
+    
+    private void sendPostRequest(String entry) {
+        try {
+            String payload = URLEncoder.encode("entry", "UTF-8") + "=" + URLEncoder.encode(entry.toString(), "UTF-8");
+            HttpURLConnection conn = null;
+            conn = get_connection(url, "POST");
+            conn.setRequestProperty("accept", "text/plain");
+
+            DataOutputStream out = new DataOutputStream(conn.getOutputStream());
+            out.writeBytes(payload);
+            out.flush();
+            get_response(conn);
+        } catch (IOException ex) {
+            Logger.getLogger(reservationClient.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
     
     private void send_typed_response(HttpServletRequest request, HttpServletResponse response, Object data) {
-        String desired_type = request.getHeader("accept");
+        send_plain(response, data);
 
-        // If client requests plain text or HTML, send it; else XML.
-        if (desired_type.contains("text/plain"))
-            send_plain(response, data);
-        else if (desired_type.contains("text/html"))
-            send_html(response, data);
-        else
-            send_xml(response, data);
-    }
-    private void send_html(HttpServletResponse response, Object data) {
-        String html_start =
-            "<html><head><title>send_html response</title></head><body><div>";
-        String html_end = "</div></body></html>";
-        String html_doc = html_start + data.toString() + html_end;
-        send_plain(response, html_doc);
     }
 
     private void send_plain(HttpServletResponse response, Object data) {
@@ -106,18 +138,6 @@ public class OrchestratorService extends HttpServlet{
         }
     }
         
-    private void send_xml(HttpServletResponse response, Object data) {
-        try {
-            try (XMLEncoder enc = new XMLEncoder(response.getOutputStream())) {
-                enc.writeObject(data.toString());
-            }
-        }
-        catch(IOException e) {
-            throw new HTTPException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-        }
-    }
-    
-    
     private void sendRequest(String cityTo, String cityFrom, int guests){
         try {
             HttpURLConnection conn;
@@ -241,7 +261,7 @@ public class OrchestratorService extends HttpServlet{
                         cityTo = value[1];
                     }
                 }
-                results += "    Option " + id + " Type: " + make + " " + model + " in " + cityTo + ".  Seats " + guests + " passenger.  Availability: " + availability + " seats" + " $endl";
+                results += "    Option " + id + " Type: " + make + " " + model + " in " + cityTo + ".  Seats " + guests + " passenger.  Availability: " + availability + " cars" + " $endl";
             }
         } 
         return results;

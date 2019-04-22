@@ -12,6 +12,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -33,11 +34,12 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
         catch(NullPointerException e) { System.err.println(e); }
     }
 
-    private void sendPostRequest(String payload) {
+    private void sendPostRequest(String entry) {
         try {
+            String payload = URLEncoder.encode("entry", "UTF-8") + "=" + URLEncoder.encode(entry.toString(), "UTF-8");
             HttpURLConnection conn = null;
             conn = get_connection(url, "POST");
-            conn.setRequestProperty("accept", "text/xml");
+            conn.setRequestProperty("accept", "text/plain");
 
             DataOutputStream out = new DataOutputStream(conn.getOutputStream());
             out.writeBytes(payload);
@@ -75,7 +77,7 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
             System.out.println(xml);
 
         }
-        catch(IOException e) { System.err.println(e); }
+        catch(IOException e) { }
     }
 
         public static void main(String args[]) {
@@ -83,7 +85,11 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
             String cityTo = "Pittsburgh";
             String cityFrom = "Erie";
             int guests = 3;
+            
             rc.sendRequest(cityTo, cityFrom, guests);
+            
+            rc.sendPostRequest("4 3,3 3,1 3,2 3");
 
+            rc.sendRequest(cityTo, cityFrom, guests);
         }
 }
