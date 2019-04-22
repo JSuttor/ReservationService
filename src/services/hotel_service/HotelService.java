@@ -5,19 +5,9 @@
  */
 package services.hotel_service;
 
-import services.hotel_service.HotelOption;
-import services.vehicle_service.VehicleOption;
-import services.flight_service.FlightOption;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.ResultSet;
-import java.util.List;
 import java.beans.XMLEncoder;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,9 +16,6 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.xml.ws.http.HTTPException;
 
 
@@ -39,7 +26,7 @@ public class HotelService extends HttpServlet {
      
     private void sendRequest(String optionType, String cityTo, String cityFrom, int guests){
         try {
-            HttpURLConnection conn = null;
+            HttpURLConnection conn;
             String requestURL = url + "?optionType=" + optionType + "&cityTo=" + cityTo + "&cityFrom=" + cityFrom + "&guests=" + guests;
             System.out.println(requestURL);
             conn = get_connection(requestURL, "GET");
@@ -47,15 +34,14 @@ public class HotelService extends HttpServlet {
             conn.connect();
             get_response(conn);
         }
-        catch(IOException e) { System.err.println(e); }
-        catch(NullPointerException e) { System.err.println(e); }
+        catch(IOException | NullPointerException e) { System.err.println(e); }
     }
        
     private HttpURLConnection get_connection(String url_string, String verb) {
         HttpURLConnection conn = null;
         try {
-            URL url = new URL(url_string);
-            conn = (HttpURLConnection) url.openConnection();
+            URL receivedURL = new URL(url_string);
+            conn = (HttpURLConnection) receivedURL.openConnection();
             conn.setRequestMethod(verb);
             conn.setDoInput(true);
             conn.setDoOutput(true);
@@ -72,7 +58,7 @@ public class HotelService extends HttpServlet {
             //Convert to BufferedReader
             BufferedReader reader =
                 new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String next = null;
+            String next;
             while ((next = reader.readLine()) != null)
                 xml += next;
             System.out.println(xml);
@@ -82,6 +68,7 @@ public class HotelService extends HttpServlet {
     }
 
     //Called by client and sends request
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         this.request = request;
         this.response = response;
@@ -114,9 +101,9 @@ public class HotelService extends HttpServlet {
         
         private void send_xml(HttpServletResponse response, Object data) {
         try {
-            XMLEncoder enc = new XMLEncoder(response.getOutputStream());
-            enc.writeObject(data.toString());
-            enc.close();
+            try (XMLEncoder enc = new XMLEncoder(response.getOutputStream())) {
+                enc.writeObject(data.toString());
+            }
         }
         catch(IOException e) {
             throw new HTTPException(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);

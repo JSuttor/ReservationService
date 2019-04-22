@@ -2,6 +2,7 @@ package services.hotel_service;
 
 public class HotelOption {
     
+    int hotelID;
     public int guests;
     String cityTo;
     public int availability;
@@ -9,7 +10,8 @@ public class HotelOption {
     public int price;
     public int time;
   
-    public HotelOption(int availability, String name, int guests, String cityTo, int price){
+    public HotelOption(int hotelID, int availability, String name, int guests, String cityTo, int price){
+        this.hotelID = hotelID;
         this.guests = guests;
         this.availability = availability;
         this.cityTo = cityTo;
@@ -35,7 +37,7 @@ public class HotelOption {
     
     @Override
     public String toString(){
-        String result = "hotel,availability:" + availability + ",name:" + name + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
+        String result = "hotel,ID:" + hotelID + ",availability:" + availability + ",name:" + name + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
         
         return result;
     }

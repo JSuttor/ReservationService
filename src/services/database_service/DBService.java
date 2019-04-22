@@ -8,7 +8,6 @@ package services.database_service;
 import services.hotel_service.HotelOption;
 import services.vehicle_service.VehicleOption;
 import services.flight_service.FlightOption;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,8 +21,6 @@ import java.beans.XMLEncoder;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.xml.ws.http.HTTPException;
 /**
  *
@@ -46,7 +43,7 @@ public class DBService extends HttpServlet{
     }
     
     public List<FlightOption> fetchFlightData(String cityTo, String cityFrom, int guests){
-        List<FlightOption> optionList = new ArrayList<FlightOption>();
+        List<FlightOption> optionList = new ArrayList<>();
         
         try {
             ResultSet rs;
@@ -61,7 +58,7 @@ public class DBService extends HttpServlet{
             
             //process data from flight record
             while(rs.next()){
-                FO = new FlightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
+                FO = new FlightOption(rs.getInt("FlightID"), rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
                 optionList.add(FO);
             }
             
@@ -73,7 +70,7 @@ public class DBService extends HttpServlet{
             
             //process data from flight record
             while(rs.next()){
-                FO = new FlightOption(rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
+                FO = new FlightOption(rs.getInt("FlightID"), rs.getInt("AVAILABILITY"), rs.getString("CITYTO"), rs.getString("CITYFROM"), rs.getInt("PRICE"), rs.getInt("FLIGHTTIME"));
                 optionList.add(FO);
             }
                         
@@ -84,7 +81,7 @@ public class DBService extends HttpServlet{
     }
     
     public List<HotelOption> fetchHotelData(String cityTo, int guests){
-        List<HotelOption> optionList = new ArrayList<HotelOption>();
+        List<HotelOption> optionList = new ArrayList<>();
         
         try {
             ResultSet rs;
@@ -100,7 +97,7 @@ public class DBService extends HttpServlet{
 
             //process data from hotel record
             while(rs.next()){
-                HO = new HotelOption(rs.getInt("AVAILABILITY"), rs.getString("HOTELNAME"), rs.getInt("MAXGUESTS"), rs.getString("CITY"), rs.getInt("PRICE"));
+                HO = new HotelOption(rs.getInt("RoomID"), rs.getInt("AVAILABILITY"), rs.getString("HOTELNAME"), rs.getInt("MAXGUESTS"), rs.getString("CITY"), rs.getInt("PRICE"));
                 optionList.add(HO);
             }
         }
@@ -112,7 +109,7 @@ public class DBService extends HttpServlet{
     }
     
     public List<VehicleOption> fetchVehicleData(String cityTo, int guests){
-        List<VehicleOption> optionList = new ArrayList<VehicleOption>();
+        List<VehicleOption> optionList = new ArrayList<>();
         
         try {
             ResultSet rs;
@@ -126,7 +123,7 @@ public class DBService extends HttpServlet{
             
             //process data from hotel record
             while(rs.next()){
-                VO = new VehicleOption(rs.getInt("AVAILABILITY"), rs.getString("CARMAKE"), rs.getString("CARMODEL"), rs.getInt("MAXPASSENGERS"), rs.getString("CITY"), rs.getInt("PRICE"));
+                VO = new VehicleOption(rs.getInt("CarID"), rs.getInt("AVAILABILITY"), rs.getString("CARMAKE"), rs.getString("CARMODEL"), rs.getInt("MAXPASSENGERS"), rs.getString("CITY"), rs.getInt("PRICE"));
                 optionList.add(VO);
             }
         }
@@ -148,9 +145,9 @@ public class DBService extends HttpServlet{
         try {
             int guestNum = Integer.parseInt(guests.trim());
             String resp = "";
-            List<FlightOption> fOptionList = new ArrayList<FlightOption>();
-            List<HotelOption> hOptionList = new ArrayList<HotelOption>();
-            List<VehicleOption> vOptionList = new ArrayList<VehicleOption>();
+            List<FlightOption> fOptionList = new ArrayList<>();
+            List<HotelOption> hOptionList = new ArrayList<>();
+            List<VehicleOption> vOptionList = new ArrayList<>();
             if(optionType.trim().equals("flight")){
                 fOptionList = fetchFlightData(cityTo, cityFrom, guestNum);
                 for(FlightOption fO : fOptionList){

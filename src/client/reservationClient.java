@@ -6,38 +6,19 @@
 package client;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 import client.Client.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-//import services.database_service.FlightOption;
-//import services.database_service.AbstractOption;
-//import services.database_service.HotelOption;
-//import services.database_service.VehicleOption;
-
-/**
- *
- * @author JTS5732
- */
 public class reservationClient {
     
-    private static final String vurl = "http://localhost:8080/vehicle_service/VServ";
-    private static final String hurl = "http://localhost:8080/hotel_service/HServ";
-    private static final String furl = "http://localhost:8080/flight_service/FServ";
-    private static final String cityTo = "Erie";
-    private static final String cityFrom = "Pittsburgh";
-    private static final int guests = 3;
-    
-    String url;
-    
-    /**
-     * Creates new form CalculatorClient
-     */
-   
+private static final String url = "http://localhost:8080/orchestrator_service/OServ";  
     
     private void sendRequest(String cityTo, String cityFrom, int guests){
         try {
@@ -53,109 +34,20 @@ public class reservationClient {
         catch(NullPointerException e) { System.err.println(e); }
     }
 
-    private void printResp(String resp){
-        int availability = 0;
-        int time = 0;
-        int price = 0;
-        String cityTo = "";
-        String cityFrom = "";
-        int guests = 0;
-        String name = "";
-        String make = "";
-        String model = "";
-        
-        int flightNum = 0;
-        int hotelNum = 0;
-        int vehicleNum = 0;
-               
-        String[] objs = resp.split("\\|");
-        for(String obj : objs){
-            String[] fields = obj.split(",");
-            if(fields[0].equals("flight")){
-                if(flightNum == 0){
-                    System.out.println("\nFlights:");
-                }
-                flightNum++;
-                for(int i = 1; i < fields.length; i++){
-                    String[] value = fields[i].split(":");
-                    if(i == 1){
-                        availability = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 2){
-                        time = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 3){
-                        price = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 4){
-                        cityTo = value[1];
-                    }
-                    else if(i == 5){
-                        cityFrom = value[1];
-                    }
-                }
-                if(cityTo.equals(this.cityTo)){
-                    System.out.println("  Flight to:");
-                }
-                else{
-                    System.out.println("  Return Flight:");
-                }
-                System.out.println("    Option " + flightNum + " From " + cityFrom + " to " + cityTo + " at " + time + "  Availability: " + availability + " seats");
-            }
-            else if(fields[0].equals("hotel")){
-                if(hotelNum == 0){
-                    System.out.println("\nHotels:");
-                }
-                hotelNum++;
-                for(int i = 1; i < fields.length; i++){
-                    String[] value = fields[i].split(":");
-                    if(i == 1){
-                        availability = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 2){
-                        name = value[1];
-                    }
-                    else if(i == 3){
-                        guests = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 4){
-                        price = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 5){
-                        cityTo = value[1];
-                    }
-                }
-                System.out.println("    Option " + hotelNum + " Hotel name: " + name + " in " + cityTo + " for up to " + guests + " guests.  Availability: " + availability + " rooms");
-            }
-            else{
-                if(vehicleNum == 0){
-                    System.out.println("\nVehicles:");
-                }
-                vehicleNum++;
-                for(int i = 1; i < fields.length; i++){
-                    String[] value = fields[i].split(":");
-                    if(i == 1){
-                        availability = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 2){
-                        make = value[1];
-                    }
-                    else if(i == 3){
-                        model = value[1];
-                    }
-                    else if(i == 4){
-                        guests = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 5){
-                        price = Integer.parseInt(value[1]);
-                    }
-                    else if(i == 6){
-                        cityTo = value[1];
-                    }
-                }
-                System.out.println("    Option " + vehicleNum + " Type: " + make + " " + model + " in " + cityTo + ".  Seats " + guests + " passenger.  Availability: " + availability + " seats");
-            }
-        } 
+    private void sendPostRequest(String payload) {
+        try {
+            HttpURLConnection conn = null;
+            conn = get_connection(url, "POST");
+            conn.setRequestProperty("accept", "text/xml");
+
+            DataOutputStream out = new DataOutputStream(conn.getOutputStream());
+            out.writeBytes(payload);
+            out.flush();
+            get_response(conn);
+        } catch (IOException ex) {
+            Logger.getLogger(reservationClient.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
     
     private HttpURLConnection get_connection(String url_string, String verb) {
@@ -180,14 +72,15 @@ public class reservationClient {
             String next = null;
             while ((next = reader.readLine()) != null)
                 xml += next;
-            //System.out.println(xml);
-            printResp(xml);
+            xml = xml.replace("$endl", "\n");
+            System.out.println(xml);
 
         }
         catch(IOException e) { System.err.println(e); }
     }
-    
+
         public static void main(String args[]) {
+            //SOAP Login
             reservationClient rc = new reservationClient(); 
             LogRequestPortTypeService service = new LogRequestPortTypeService();
             LogRequestPortType s = service.getLogRequestPortTypePort();
@@ -196,16 +89,11 @@ public class reservationClient {
             L.setUsername("Bob");
             L.setPassword("Joe");
  
+            //REST Service
             System.out.println(s.login(L).getCompleted()); //GetCompleted = get string
-            
-            
-            
-            rc.url = vurl;
+            String cityTo = "Pittsburgh";
+            String cityFrom = "Erie";
+            int guests = 3;
             rc.sendRequest(cityTo, cityFrom, guests);
-            rc.url = hurl;
-            rc.sendRequest(cityTo, cityFrom, guests);
-            rc.url = furl;
-            rc.sendRequest(cityTo, cityFrom, guests);
-            
         }
 }

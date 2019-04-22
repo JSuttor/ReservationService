@@ -1,6 +1,7 @@
 package services.vehicle_service;
 
 public class VehicleOption {
+    int vehicleID;
     public int guests;
     String cityTo;
     public int availability;
@@ -9,7 +10,8 @@ public class VehicleOption {
     public String make;
     public String model;
     
-    public VehicleOption(int availability, String make, String model, int guests, String cityTo, int price){
+    public VehicleOption(int vehicleID, int availability, String make, String model, int guests, String cityTo, int price){
+        this.vehicleID = vehicleID;
         this.guests = guests;
         this.availability = availability;
         this.cityTo = cityTo;
@@ -38,7 +40,7 @@ public class VehicleOption {
     }
     @Override
     public String toString(){
-        String result = "vehicle,availability:" + availability + ",make:" + make + ",model:" + model + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
+        String result = "vehicle,ID:" + vehicleID + ",availability:" + availability + ",make:" + make + ",model:" + model + ",guests:" + guests + ",price:" + price + ",cityTo:" + cityTo + "|";
         
         return result;
     }
