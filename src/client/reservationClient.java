@@ -12,7 +12,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import client.Client.*;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -34,11 +36,12 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
         catch(NullPointerException e) { System.err.println(e); }
     }
 
-    private void sendPostRequest(String payload) {
+    private void sendPostRequest(String entry) {
         try {
+            String payload = URLEncoder.encode("entry", "UTF-8") + "=" + URLEncoder.encode(entry.toString(), "UTF-8");
             HttpURLConnection conn = null;
             conn = get_connection(url, "POST");
-            conn.setRequestProperty("accept", "text/xml");
+            conn.setRequestProperty("accept", "text/plain");
 
             DataOutputStream out = new DataOutputStream(conn.getOutputStream());
             out.writeBytes(payload);
@@ -76,7 +79,7 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
             System.out.println(xml);
 
         }
-        catch(IOException e) { System.err.println(e); }
+        catch(IOException e) { }
     }
 
         public static void main(String args[]) {
@@ -85,15 +88,59 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
             LogRequestPortTypeService service = new LogRequestPortTypeService();
             LogRequestPortType s = service.getLogRequestPortTypePort();
             
-            LoginComplete L = new LoginComplete();
-            L.setUsername("Bob");
-            L.setPassword("Joe");
- 
-            //REST Service
-            System.out.println(s.login(L).getCompleted()); //GetCompleted = get string
-            String cityTo = "Pittsburgh";
-            String cityFrom = "Erie";
-            int guests = 3;
-            rc.sendRequest(cityTo, cityFrom, guests);
+            Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+            
+            boolean login = false;
+            
+            while(login == false){
+                System.out.println("Enter username");
+                String username = myObj.nextLine();
+                System.out.println("Enter password");
+                String password = myObj.nextLine();
+                //Bob
+                //Joe
+
+                LoginComplete L = new LoginComplete();
+                L.setUsername(username);
+                L.setPassword(password);
+
+                //REST Service
+                String testSuccess = s.login(L).getCompleted();
+                if(testSuccess.equals("Login Successful!")){
+                    login = true;
+                    System.out.println("Login Successful!");
+                }
+                else{
+                    System.out.println("Login failed. Please try again.");
+                }
+            }
+            
+            System.out.println("Enter the city you're going to");
+            String cityTo = myObj.nextLine();
+            System.out.println("Enter the city you're coming from");
+            String cityFrom = myObj.nextLine();
+            System.out.println("Enter number of guests");
+            String guests = myObj.nextLine();
+            int guestNum = Integer.parseInt(guests.trim());
+            //Pittsburgh
+            //Erie
+            //3
+       
+            rc.sendRequest(cityTo, cityFrom, guestNum);
+            
+            System.out.println("Enter option number of chosen car");
+            String carOption = myObj.nextLine();
+            System.out.println("Enter option number of chosen hotel");
+            String hotelOption = myObj.nextLine();
+            System.out.println("Enter option number of chosen flight to your destination");
+            String flightOption1 = myObj.nextLine();
+            System.out.println("Enter option number of chosen return flight");
+            String flightOption2 = myObj.nextLine();
+            
+            String request = carOption + " " + guestNum + "," + hotelOption + " " + guestNum + "," + flightOption1 + " " + guestNum + "," + flightOption2 + " " + guestNum;
+            rc.sendPostRequest(request);
+            
+            //clean servlets
+            rc.sendRequest(cityTo, cityFrom, guestNum);
         }
 }

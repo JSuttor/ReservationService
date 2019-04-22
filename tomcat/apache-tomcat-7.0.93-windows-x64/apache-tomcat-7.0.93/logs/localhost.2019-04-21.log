@@ -46,6 +46,7 @@ Apr 21, 2019 8:22:02 PM org.apache.catalina.core.ApplicationContext log
 INFO: SessionListener: contextDestroyed()
 Apr 21, 2019 8:22:02 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: contextDestroyed()
+<<<<<<< HEAD
 Apr 21, 2019 10:33:50 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: contextInitialized()
 Apr 21, 2019 10:33:50 PM org.apache.catalina.core.ApplicationContext log
@@ -54,3 +55,17 @@ Apr 21, 2019 10:33:50 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@195e39f3')
 Apr 21, 2019 10:33:50 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@6e496ee9')
+=======
+Apr 21, 2019 10:19:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 21, 2019 10:19:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 21, 2019 10:19:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@18c944e5')
+Apr 21, 2019 10:19:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@48af62d0')
+Apr 21, 2019 10:49:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 21, 2019 10:49:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+>>>>>>> 19f05cd3fc7d25c0736fa29ee8b9679af1041492

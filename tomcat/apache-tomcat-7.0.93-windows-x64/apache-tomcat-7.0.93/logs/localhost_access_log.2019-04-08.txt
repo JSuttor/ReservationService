@@ -1,8 +1,0 @@
-127.0.0.1 - - [08/Apr/2019:18:49:20 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
-127.0.0.1 - - [08/Apr/2019:18:49:20 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
-127.0.0.1 - - [08/Apr/2019:18:49:20 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
-127.0.0.1 - - [08/Apr/2019:18:49:20 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
-127.0.0.1 - - [08/Apr/2019:18:49:35 -0400] "GET /database_service/dbServ?optionType=flight&cityTo=Erie&cityFrom=Pittsburgh&guests=3 HTTP/1.1" 200 161
-127.0.0.1 - - [08/Apr/2019:18:50:31 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
-127.0.0.1 - - [08/Apr/2019:18:50:31 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
-127.0.0.1 - - [08/Apr/2019:18:50:31 -0400] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -

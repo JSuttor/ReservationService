@@ -1,17 +1,22 @@
 
 package services.flight_service;
 
+import client.reservationClient;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.beans.XMLEncoder;
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.ws.http.HTTPException;
 
 
@@ -45,6 +50,39 @@ public class FlightService extends HttpServlet {
         catch(MalformedURLException e) { System.err.println(e); }
         catch(IOException e) { System.err.println(e); }
         return conn;
+    }
+    
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        String entry = request.getParameter("entry");
+        if (entry == null)
+            throw new HTTPException(HttpServletResponse.SC_BAD_REQUEST);
+
+        String[ ] parts = entry.split(",");
+         
+        //if(!parts[0].trim().equals("0"))
+            sendPostRequest(parts[0].trim());
+        //if(!parts[1].trim().equals("0"))
+            sendPostRequest(parts[1].trim());
+        
+        String resp = "reservation succeeded";
+        send_typed_response(request, response, resp);
+    }
+    
+    private void sendPostRequest(String entry) {
+        try {
+            String payload = URLEncoder.encode("entry", "UTF-8") + "=" + URLEncoder.encode("flight," + entry.toString(), "UTF-8");
+            HttpURLConnection conn = null;
+            conn = get_connection(url, "POST");
+            conn.setRequestProperty("accept", "text/plain");
+
+            DataOutputStream out = new DataOutputStream(conn.getOutputStream());
+            out.writeBytes(payload);
+            out.flush();
+            get_response(conn);
+        } catch (IOException ex) {
+            Logger.getLogger(reservationClient.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
     
     private void get_response(HttpURLConnection conn) {

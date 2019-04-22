@@ -21,6 +21,8 @@ import java.beans.XMLEncoder;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.ws.http.HTTPException;
 /**
  *
@@ -39,6 +41,57 @@ public class DBService extends HttpServlet{
            
         } catch (SQLException err) {
             System.out.println(err.getMessage());
+        }
+    }
+    
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            String entry = request.getParameter("entry");
+            if (entry == null)
+                throw new HTTPException(HttpServletResponse.SC_BAD_REQUEST);
+            
+            String[ ] parts = entry.split(",");
+            String[ ] params = parts[1].split(" ");
+            String id = params[0].trim();
+            String guests = params[1].trim();
+            int guestNum = Integer.parseInt(guests.trim());
+            String getSQL;
+            String setSQL;
+            int availability;
+            ResultSet rs;
+            Statement stmt = con.createStatement();
+            if(parts[0].trim().equals("flight")){
+                getSQL = "SELECT * FROM FLIGHTS WHERE FLIGHTID=" + id;
+                rs = stmt.executeQuery(getSQL);
+                rs.next();
+                availability = rs.getInt("AVAILABILITY");
+                availability -= guestNum;
+                setSQL = "UPDATE FLIGHTS SET AVAILABILITY=" + availability + " WHERE FLIGHTID=" + id;
+                stmt.executeUpdate(setSQL);
+            }
+            else if(parts[0].trim().equals("hotel")){
+                getSQL = "SELECT * FROM HOTEL_ROOMS WHERE ROOMID=" + id;
+                rs = stmt.executeQuery(getSQL);
+                rs.next();
+                availability = rs.getInt("AVAILABILITY");
+                availability -= 1;
+                setSQL = "UPDATE HOTEL_ROOMS SET AVAILABILITY=" + availability + " WHERE ROOMID=" + id;
+                stmt.executeUpdate(setSQL);
+            }
+            else if(parts[0].trim().equals("vehicle")){
+                getSQL = "SELECT * FROM VEHICLE_RENTALS WHERE CARID=" + id;
+                rs = stmt.executeQuery(getSQL);
+                rs.next();
+                availability = rs.getInt("AVAILABILITY");
+                availability -= 1;
+                setSQL = "UPDATE VEHICLE_RENTALS SET AVAILABILITY=" + availability + " WHERE CARID=" + id;
+                stmt.executeUpdate(setSQL);                
+            }
+            
+            String resp = "reservation succeeded";
+            send_typed_response(request, response, resp);
+        } catch (SQLException ex) {
+            Logger.getLogger(DBService.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
