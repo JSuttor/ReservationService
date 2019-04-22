@@ -13,6 +13,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+import client.Client.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -81,7 +82,17 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
     }
 
         public static void main(String args[]) {
-            reservationClient rc = new reservationClient();
+            //SOAP Login
+            reservationClient rc = new reservationClient(); 
+            LogRequestPortTypeService service = new LogRequestPortTypeService();
+            LogRequestPortType s = service.getLogRequestPortTypePort();
+            
+            LoginComplete L = new LoginComplete();
+            L.setUsername("Bob");
+            L.setPassword("Joe");
+ 
+            //REST Service
+            System.out.println(s.login(L).getCompleted()); //GetCompleted = get string
             String cityTo = "Pittsburgh";
             String cityFrom = "Erie";
             int guests = 3;
