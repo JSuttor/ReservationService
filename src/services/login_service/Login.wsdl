@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<wsdl:definitions xmlns:soa="http://ChristianRosalesTest.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ExternalSuppliersWS" targetNamespace="http://ChristianRosalesTest.com"    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://schemas.xmlsoap.org/wsdl/
+                      http://schemas.xmlsoap.org/wsdl/
+                      http://www.w3.org/2001/XMLSchema
+                      https://www.w3.org/2001/XMLSchema.xsd">
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+                    targetNamespace="http://ChristianRosalesTest.com">
+
+            <xsd:element name="LoginComplete">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Username" type="xsd:string"/>
+                        <xsd:element name="Password" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="LoginResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Completed" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </wsdl:types>
+
+    <wsdl:message name="LogReqMsg">
+        <wsdl:part name="LoginRequest" element="soa:LoginComplete"/>
+    </wsdl:message>
+    <wsdl:message name="LogRespondMsg">
+        <wsdl:part name="LoginRespond" element="soa:LoginResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="LogRequestPortType">
+        <wsdl:operation name="Login">
+            <wsdl:input message="soa:LogReqMsg"/>
+            <wsdl:output message="soa:LogRespondMsg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="ServiceSoap" type="soa:LogRequestPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="Login">
+            <soap:operation soapAction="http://ChristianRosalesTest.com"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="Service">
+        <wsdl:port binding="soa:ServiceSoap" name="LogRequests">
+            <soap:address location="http://ChristianRosalesTest.com"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

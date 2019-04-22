@@ -12,6 +12,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
+import client.Client.*;
+
 //import services.database_service.FlightOption;
 //import services.database_service.AbstractOption;
 //import services.database_service.HotelOption;
@@ -186,7 +188,17 @@ public class reservationClient {
     }
     
         public static void main(String args[]) {
-            reservationClient rc = new reservationClient();       
+            reservationClient rc = new reservationClient(); 
+            LogRequestPortTypeService service = new LogRequestPortTypeService();
+            LogRequestPortType s = service.getLogRequestPortTypePort();
+            
+            LoginComplete L = new LoginComplete();
+            L.setUsername("Bob");
+            L.setPassword("Joe");
+ 
+            System.out.println(s.login(L).getCompleted()); //GetCompleted = get string
+            
+            
             
             rc.url = vurl;
             rc.sendRequest(cityTo, cityFrom, guests);
@@ -194,5 +206,6 @@ public class reservationClient {
             rc.sendRequest(cityTo, cityFrom, guests);
             rc.url = furl;
             rc.sendRequest(cityTo, cityFrom, guests);
+            
         }
 }
