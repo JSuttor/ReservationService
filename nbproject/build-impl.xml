@@ -1085,6 +1085,30 @@ is divided into following sections:
     
     <copy file="./build/classes/services/vehicle_service/VehicleOption.class"
     tofile="./build/classes/temp/services/vehicle_service/VehicleOption.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/LoginComplete.class"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/LoginComplete.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/LoginResponse.class"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/LoginResponse.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/LogRequestPortType.class"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/LogRequestPortType.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/LogRequestPortTypeService.class"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/LogRequestPortTypeService.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/ObjectFactory.class"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/ObjectFactory.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/package-info.class"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/package-info.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/UUIDHandler.class"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/UUIDHandler.class"/>
+    
+    <copy file="./build/classes/services/orchestrator_service/Client/1.xml"
+    tofile="./build/classes/temp/services/orchestrator_service/Client/1.xml"/>
         
     <war webxml="./src/services/database_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war">
         <classes dir="./build/classes/temp"/>

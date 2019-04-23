@@ -13,14 +13,14 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-import client.Client.*;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class reservationClient {
     
-private static final String url = "http://localhost:8080/orchestrator_service/OServ";  
+    private static final String url = "http://localhost:8080/orchestrator_service/OServ";  
+    String testSuccess = "";
     
     private void sendRequest(String cityTo, String cityFrom, int guests){
         try {
@@ -34,6 +34,21 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
         }
         catch(IOException e) { System.err.println(e); }
         catch(NullPointerException e) { System.err.println(e); }
+    }
+    
+    private void sendLoginRequest(String username, String password){
+        try {
+            HttpURLConnection conn = null;
+            String requestURL = url + "?username=" + username + "&password=" + password;
+            conn = get_connection(requestURL, "GET");
+            conn.addRequestProperty("accept", "text/plain");
+            conn.connect();
+            get_login_response(conn);
+        }
+        catch(IOException e) { System.err.println(e); }
+        catch(NullPointerException e) { System.err.println(e); }
+        
+        
     }
 
     private void sendPostRequest(String entry) {
@@ -81,12 +96,24 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
         }
         catch(IOException e) { }
     }
+    
+    private void get_login_response(HttpURLConnection conn) {
+        try {
+            String xml = "";
+            BufferedReader reader =
+                new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String next = null;
+            while ((next = reader.readLine()) != null)
+                xml += next;
+            testSuccess = xml;
+        }
+        catch(IOException e) { }
+    }
 
         public static void main(String args[]) {
             //SOAP Login
             reservationClient rc = new reservationClient(); 
-            LogRequestPortTypeService service = new LogRequestPortTypeService();
-            LogRequestPortType s = service.getLogRequestPortTypePort();
+
             
             Scanner myObj = new Scanner(System.in);  // Create a Scanner object
             
@@ -99,14 +126,9 @@ private static final String url = "http://localhost:8080/orchestrator_service/OS
                 String password = myObj.nextLine();
                 //Bob
                 //Joe
-
-                LoginComplete L = new LoginComplete();
-                L.setUsername(username);
-                L.setPassword(password);
-
                 //REST Service
-                String testSuccess = s.login(L).getCompleted();
-                if(testSuccess.equals("Login Successful!")){
+                rc.sendLoginRequest(username, password);
+                if(rc.testSuccess.equals("Login Successful!")){
                     login = true;
                     System.out.println("Login Successful!");
                 }

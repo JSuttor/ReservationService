@@ -1,0 +1,1102 @@
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.93
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 16 2019 17:13:17 UTC
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.93.0
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\JDK\jre
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_144-b01
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\conf\logging.properties
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|REMOTE102
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\temp
+Apr 23, 2019 5:39:29 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.21 using APR version 1.6.5.
+Apr 23, 2019 5:39:29 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Apr 23, 2019 5:39:29 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.1.1a  20 Nov 2018)
+Apr 23, 2019 5:39:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 5:39:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 564 ms
+Apr 23, 2019 5:39:29 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 23, 2019 5:39:29 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.93
+Apr 23, 2019 5:39:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war
+Apr 23, 2019 5:39:30 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:30 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war has finished in 700 ms
+Apr 23, 2019 5:39:30 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 5:39:30 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 599 ms
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 344 ms
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 323 ms
+Apr 23, 2019 5:39:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 324 ms
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 353 ms
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs has finished in 252 ms
+Apr 23, 2019 5:39:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples has finished in 543 ms
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager has finished in 240 ms
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager has finished in 235 ms
+Apr 23, 2019 5:39:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT
+Apr 23, 2019 5:39:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:39:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT has finished in 286 ms
+Apr 23, 2019 5:39:34 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 5:39:34 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 5:39:34 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4291 ms
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 296 ms
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 273 ms
+Apr 23, 2019 5:41:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 329 ms
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 293 ms
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:41:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 279 ms
+Apr 23, 2019 5:42:57 PM org.apache.coyote.http11.AbstractHttp11Processor process
+INFO: Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.InternalAprInputBuffer.parseRequestLine(InternalAprInputBuffer.java:240)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1050)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2575)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2564)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+Apr 23, 2019 5:46:45 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 5:46:45 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 5:46:45 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 5:46:45 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 5:46:45 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 5:46:45 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 317 ms
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 345 ms
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 287 ms
+Apr 23, 2019 5:46:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 5:46:47 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:46:47 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 284 ms
+Apr 23, 2019 5:46:47 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 5:46:47 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:46:47 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 270 ms
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 367 ms
+Apr 23, 2019 5:48:07 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 287 ms
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 284 ms
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 280 ms
+Apr 23, 2019 5:48:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 5:48:09 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:48:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 318 ms
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 302 ms
+Apr 23, 2019 5:56:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 308 ms
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 308 ms
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 341 ms
+Apr 23, 2019 5:57:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 5:57:01 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:57:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 284 ms
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 288 ms
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 273 ms
+Apr 23, 2019 5:59:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 306 ms
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 283 ms
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 5:59:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 267 ms
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 322 ms
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 279 ms
+Apr 23, 2019 6:17:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 285 ms
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 280 ms
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:17:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 301 ms
+Apr 23, 2019 6:30:54 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 6:30:54 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 6:30:54 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 6:30:54 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 6:30:54 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 6:30:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 310 ms
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 312 ms
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 360 ms
+Apr 23, 2019 6:30:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:30:56 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:30:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 331 ms
+Apr 23, 2019 6:30:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:30:56 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:30:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 306 ms
+Apr 23, 2019 6:39:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 6:39:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 6:39:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 6:39:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 6:39:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 6:39:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:39:37 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:39:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 396 ms
+Apr 23, 2019 6:39:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:39:37 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:39:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 373 ms
+Apr 23, 2019 6:39:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 327 ms
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 330 ms
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:39:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 353 ms
+Apr 23, 2019 6:47:38 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 6:47:38 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 6:47:38 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 6:47:38 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 6:47:38 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 6:47:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 327 ms
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 301 ms
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 315 ms
+Apr 23, 2019 6:47:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:47:40 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:47:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 338 ms
+Apr 23, 2019 6:47:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:47:40 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:47:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 299 ms
+Apr 23, 2019 6:50:50 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 6:50:50 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 6:50:50 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 6:50:50 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 6:50:50 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 6:50:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 312 ms
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 335 ms
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 302 ms
+Apr 23, 2019 6:50:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:50:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:50:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 1,332 ms
+Apr 23, 2019 6:50:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:50:53 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:50:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 318 ms
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 349 ms
+Apr 23, 2019 6:53:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 306 ms
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 296 ms
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 328 ms
+Apr 23, 2019 6:53:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:53:55 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:53:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 287 ms
+Apr 23, 2019 6:54:46 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 23, 2019 6:54:46 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:54:46 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:54:46 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 23, 2019 6:54:46 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:54:46 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:54:46 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:54:46 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.93
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 16 2019 17:13:17 UTC
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.93.0
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\JDK\jre
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_144-b01
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 23, 2019 6:54:49 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\conf\logging.properties
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|REMOTE102
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\temp
+Apr 23, 2019 6:54:50 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.21 using APR version 1.6.5.
+Apr 23, 2019 6:54:50 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Apr 23, 2019 6:54:50 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.1.1a  20 Nov 2018)
+Apr 23, 2019 6:54:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:54:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 520 ms
+Apr 23, 2019 6:54:50 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 23, 2019 6:54:50 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.93
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war has finished in 669 ms
+Apr 23, 2019 6:54:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:54:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 413 ms
+Apr 23, 2019 6:54:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:54:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 343 ms
+Apr 23, 2019 6:54:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 411 ms
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 327 ms
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 311 ms
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs has finished in 295 ms
+Apr 23, 2019 6:54:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples
+Apr 23, 2019 6:54:53 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples has finished in 573 ms
+Apr 23, 2019 6:54:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager
+Apr 23, 2019 6:54:53 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager has finished in 237 ms
+Apr 23, 2019 6:54:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager
+Apr 23, 2019 6:54:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager has finished in 222 ms
+Apr 23, 2019 6:54:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT
+Apr 23, 2019 6:54:54 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:54:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT has finished in 245 ms
+Apr 23, 2019 6:54:54 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:54:54 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:54:54 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4146 ms
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 334 ms
+Apr 23, 2019 6:58:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 326 ms
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 348 ms
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 397 ms
+Apr 23, 2019 6:58:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:58:06 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:06 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 317 ms
+Apr 23, 2019 6:58:32 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 23, 2019 6:58:32 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:58:32 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:58:32 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 23, 2019 6:58:32 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:58:32 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:58:32 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:58:32 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.93
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 16 2019 17:13:17 UTC
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.93.0
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\JDK\jre
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_144-b01
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\conf\logging.properties
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|REMOTE102
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\temp
+Apr 23, 2019 6:58:35 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.21 using APR version 1.6.5.
+Apr 23, 2019 6:58:35 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Apr 23, 2019 6:58:35 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.1.1a  20 Nov 2018)
+Apr 23, 2019 6:58:35 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:58:35 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 524 ms
+Apr 23, 2019 6:58:35 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 23, 2019 6:58:35 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.93
+Apr 23, 2019 6:58:35 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war
+Apr 23, 2019 6:58:36 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war has finished in 678 ms
+Apr 23, 2019 6:58:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:58:36 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 399 ms
+Apr 23, 2019 6:58:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 325 ms
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 370 ms
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 315 ms
+Apr 23, 2019 6:58:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:58:38 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 317 ms
+Apr 23, 2019 6:58:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs
+Apr 23, 2019 6:58:38 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs has finished in 308 ms
+Apr 23, 2019 6:58:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples has finished in 535 ms
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager has finished in 272 ms
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager has finished in 236 ms
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT has finished in 260 ms
+Apr 23, 2019 6:58:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:58:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:58:39 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4113 ms
+Apr 23, 2019 6:59:11 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 23, 2019 6:59:11 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:59:11 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:59:11 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 23, 2019 6:59:11 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:59:11 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:59:11 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:59:11 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.93
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 16 2019 17:13:17 UTC
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.93.0
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\JDK\jre
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_144-b01
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\conf\logging.properties
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|REMOTE102
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\temp
+Apr 23, 2019 6:59:14 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.21 using APR version 1.6.5.
+Apr 23, 2019 6:59:14 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Apr 23, 2019 6:59:14 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.1.1a  20 Nov 2018)
+Apr 23, 2019 6:59:14 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:59:14 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 522 ms
+Apr 23, 2019 6:59:14 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 23, 2019 6:59:14 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.93
+Apr 23, 2019 6:59:14 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war
+Apr 23, 2019 6:59:15 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:15 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\calc.war has finished in 703 ms
+Apr 23, 2019 6:59:15 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 6:59:15 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:15 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 439 ms
+Apr 23, 2019 6:59:15 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 332 ms
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 381 ms
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 302 ms
+Apr 23, 2019 6:59:16 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 6:59:17 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 324 ms
+Apr 23, 2019 6:59:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs
+Apr 23, 2019 6:59:17 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\docs has finished in 265 ms
+Apr 23, 2019 6:59:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples
+Apr 23, 2019 6:59:17 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\examples has finished in 549 ms
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\host-manager has finished in 244 ms
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\manager has finished in 225 ms
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\ROOT has finished in 257 ms
+Apr 23, 2019 6:59:18 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 6:59:18 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 6:59:18 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4117 ms
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/vehicle_service]
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/orchestrator_service]
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/database_service]
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/hotel_service]
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/flight_service]
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war has finished in 352 ms
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war has finished in 324 ms
+Apr 23, 2019 7:08:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war has finished in 339 ms
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war has finished in 384 ms
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 23, 2019 7:08:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\temp\ReservationService\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war has finished in 319 ms
+Apr 23, 2019 7:13:40 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 23, 2019 7:13:40 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 7:13:40 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 7:13:40 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 23, 2019 7:13:40 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 7:13:40 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Apr 23, 2019 7:13:40 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Apr 23, 2019 7:13:40 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]

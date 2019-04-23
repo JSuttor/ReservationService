@@ -22,6 +22,9 @@ import java.net.URLEncoder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.ws.http.HTTPException;
+import services.orchestrator_service.Client.LogRequestPortType;
+import services.orchestrator_service.Client.LogRequestPortTypeService;
+import services.orchestrator_service.Client.LoginComplete;
 
 /**
  *
@@ -37,29 +40,58 @@ public class OrchestratorService extends HttpServlet{
     
     HttpServletRequest request;
     HttpServletResponse response;
+    LogRequestPortTypeService service;
     
     String url; 
     String xml = "";
+    boolean login = false;
     
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         this.request = request;
         this.response = response;
-
-        String cityTo = request.getParameter("cityTo");
-        String cityFrom = request.getParameter("cityFrom");
-        String guests = request.getParameter("guests");
-        int guestNum = Integer.parseInt(guests.trim());
-        
-        try {  
-            url = vurl;
-            sendRequest(cityTo, cityFrom, guestNum); 
-            url = hurl;
-            sendRequest(cityTo, cityFrom, guestNum); 
-            url = furl;
-            sendRequest(cityTo, cityFrom, guestNum); 
+        String valid = request.getParameter("username");
+        if(valid != null && valid != ""){
+            login = false;
         }
-        catch(NumberFormatException e) {
-            send_typed_response(request, response, -1);
+        
+        
+        if (login) {
+
+            String cityTo = request.getParameter("cityTo");
+            String cityFrom = request.getParameter("cityFrom");
+            String guests = request.getParameter("guests");
+            int guestNum = Integer.parseInt(guests.trim());
+
+            try {
+                url = vurl;
+                sendRequest(cityTo, cityFrom, guestNum);
+                url = hurl;
+                sendRequest(cityTo, cityFrom, guestNum);
+                url = furl;
+                sendRequest(cityTo, cityFrom, guestNum);
+            } catch (NumberFormatException e) {
+                send_typed_response(request, response, -1);
+            }
+            login = false;
+        }
+        else{
+            login = false;
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            System.out.println ("user: " + username);
+            System.out.println ("pass: " + password);
+
+            service = new LogRequestPortTypeService();
+            LogRequestPortType s = service.getLogRequestPortTypePort();
+            
+            LoginComplete L = new LoginComplete();
+            L.setUsername(username);
+            L.setPassword(password);
+            String testSuccess = s.login(L).getCompleted();
+            if(testSuccess.equals("Login Successful!"))
+                login = true;
+            System.out.println(testSuccess);
+            send_typed_response(request, response, testSuccess);
         }
     }
     
