@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 
 public class reservationClient {
     
-    private static final String url = "http://localhost:8080/orchestrator_service/OServ";  
+    private static final String url = "https://localhost:8443/orchestrator_service/OServ";  
     String testSuccess = "";
     
     private void sendRequest(String cityTo, String cityFrom, int guests){
@@ -48,12 +48,11 @@ public class reservationClient {
         catch(IOException e) { System.err.println(e); }
         catch(NullPointerException e) { System.err.println(e); }
         
-        
     }
 
     private void sendPostRequest(String entry) {
         try {
-            String payload = URLEncoder.encode("entry", "UTF-8") + "=" + URLEncoder.encode(entry.toString(), "UTF-8");
+            String payload = URLEncoder.encode("entry", "UTF-8") + "=" + URLEncoder.encode(entry, "UTF-8");
             HttpURLConnection conn = null;
             conn = get_connection(url, "POST");
             conn.setRequestProperty("accept", "text/plain");
@@ -111,10 +110,15 @@ public class reservationClient {
     }
 
         public static void main(String args[]) {
+            //SSL
+            System.setProperty("javax.net.ssl.trustStore", "tomcat/tomcathome/my.keystore");
+            System.setProperty("javax.net.ssl.trustStorePassword", "changeit");
+            System.setProperty("javax.net.ssl.keyStore", "tomcat/tomcathome/my.keystore");
+            System.setProperty("javax.net.ssl.keyStorePassword", "changeit");
+            
             //SOAP Login
             reservationClient rc = new reservationClient(); 
 
-            
             Scanner myObj = new Scanner(System.in);  // Create a Scanner object
             
             boolean login = false;
@@ -144,9 +148,6 @@ public class reservationClient {
             System.out.println("Enter number of guests");
             String guests = myObj.nextLine();
             int guestNum = Integer.parseInt(guests.trim());
-            //Pittsburgh
-            //Erie
-            //3
        
             rc.sendRequest(cityTo, cityFrom, guestNum);
             
