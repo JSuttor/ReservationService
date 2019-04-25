@@ -1,6 +1,13 @@
 
 package services.login_service.Services;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -21,8 +28,18 @@ import javax.xml.bind.annotation.XmlSeeAlso;
     ObjectFactory.class
 })
 public class LogRequestPortType {
-
-
+    Connection con;
+    boolean exists;
+    public LogRequestPortType(){
+        try {
+            String host = "jdbc:derby://localhost:1527/reservationDB";
+            String username = "u_name";
+            String password = "password1";
+            con = DriverManager.getConnection(host, username, password);
+        } catch (SQLException ex) {
+            Logger.getLogger(LogRequestPortType.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     /**
      * 
      * @param loginRequest
@@ -35,15 +52,38 @@ public class LogRequestPortType {
         @WebParam(name = "LoginComplete", targetNamespace = "http://ChristianRosalesTest.com", partName = "LoginRequest")
         LoginComplete loginRequest)
     {
+        exists = false;
         LoginResponse response = new LoginResponse();
-        if(loginRequest.getUsername().equals("Bob"))
-            if(loginRequest.getPassword().equals("Joe"))
+        String username;
+        String actualPassword;
+        username = loginRequest.getUsername();
+        actualPassword = getPassword(username);
+        if(exists)
+            if(loginRequest.getPassword().equals(actualPassword))
             response.setCompleted("Login Successful!");
             else
                 response.setCompleted("Invalid Password");
         else
             response.setCompleted("That username doesn't exist.");
         return response;
+    }
+    
+    private String getPassword(String givenUsername){
+        String password = "";
+        try {
+            String SQL;
+            ResultSet rs;
+            Statement stmt = con.createStatement();
+            SQL = "SELECT * FROM LOGIN WHERE USERNAME = '" + givenUsername + "'";
+            rs = stmt.executeQuery(SQL);
+            while(rs.next()){
+                exists = true;
+                password = rs.getString("PASSWORD");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(LogRequestPortType.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return password;
     }
 
 }
