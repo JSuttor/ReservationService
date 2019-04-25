@@ -19,7 +19,7 @@ import javax.xml.ws.WebServiceFeature;
  * 
  */
 @WebServiceClient(name = "LogRequestPortTypeService", targetNamespace = "http://ChristianRosalesTest.com", wsdlLocation = "http://localhost:9876/login?wsdl")
-//@HandlerChain(file = "1.xml")
+@HandlerChain(file = "1.xml")
 public class LogRequestPortTypeService
     extends Service
 {

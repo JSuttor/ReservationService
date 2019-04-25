@@ -4,7 +4,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <javaee:handler-chain>
     <javaee:handler>
-      <javaee:handler-class>Client.UUIDHandler</javaee:handler-class>
+      <javaee:handler-class>services.orchestrator_service.Client.UUIDHandler</javaee:handler-class>
     </javaee:handler>
   </javaee:handler-chain>
 </javaee:handler-chains>
