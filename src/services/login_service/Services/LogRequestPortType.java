@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -50,7 +51,7 @@ public class LogRequestPortType {
     @WebResult(name = "LoginResponse", targetNamespace = "http://ChristianRosalesTest.com", partName = "LoginRespond")
     public LoginResponse login(
         @WebParam(name = "LoginComplete", targetNamespace = "http://ChristianRosalesTest.com", partName = "LoginRequest")
-        LoginComplete loginRequest)
+        LoginComplete loginRequest)throws LogException
     {
         exists = false;
         LoginResponse response = new LoginResponse();
@@ -58,6 +59,10 @@ public class LogRequestPortType {
         String actualPassword;
         username = loginRequest.getUsername();
         actualPassword = getPassword(username);
+        if(username.isEmpty())
+            throw new LogException("Empty Username isn't allowed.", "");
+        else if (!username.matches("[a-zA-Z0-9]+\\.?"))//!Pattern.matches("\\w$", username))
+            throw new LogException("Username can only contain Number and Letters.", username);
         if(exists)
             if(loginRequest.getPassword().equals(actualPassword))
             response.setCompleted("Login Successful!");

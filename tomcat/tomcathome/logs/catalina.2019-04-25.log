@@ -1134,3 +1134,711 @@ Apr 25, 2019 7:27:27 PM org.apache.coyote.AbstractProtocol destroy
 INFO: Destroying ProtocolHandler ["http-nio-8443"]
 Apr 25, 2019 7:27:27 PM org.apache.coyote.AbstractProtocol destroy
 INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.93
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 16 2019 17:13:17 UTC
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.93.0
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\JDK\jre
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_144-b01
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\conf\logging.properties
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|REMOTE92
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\temp
+Apr 25, 2019 7:27:30 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.21 using APR version 1.6.5.
+Apr 25, 2019 7:27:30 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Apr 25, 2019 7:27:30 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.1.1a  20 Nov 2018)
+Apr 25, 2019 7:27:30 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Apr 25, 2019 7:27:30 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8443"]
+Apr 25, 2019 7:27:30 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Apr 25, 2019 7:27:30 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 778 ms
+Apr 25, 2019 7:27:30 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 25, 2019 7:27:30 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.93
+Apr 25, 2019 7:27:30 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\calc.war
+Apr 25, 2019 7:27:31 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\calc.war has finished in 687 ms
+Apr 25, 2019 7:27:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\database_service.war
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\database_service.war has finished in 439 ms
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\flight_service.war
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\flight_service.war has finished in 345 ms
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\hotel_service.war
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\hotel_service.war has finished in 368 ms
+Apr 25, 2019 7:27:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\orchestrator_service.war
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\orchestrator_service.war has finished in 366 ms
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\vehicle_service.war
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\vehicle_service.war has finished in 333 ms
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\docs
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\docs has finished in 271 ms
+Apr 25, 2019 7:27:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\examples
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\examples has finished in 495 ms
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\host-manager
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\host-manager has finished in 333 ms
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\manager
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\manager has finished in 243 ms
+Apr 25, 2019 7:27:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\ROOT
+Apr 25, 2019 7:27:35 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 7:27:35 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\ROOT has finished in 256 ms
+Apr 25, 2019 7:27:35 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Apr 25, 2019 7:27:35 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8443"]
+Apr 25, 2019 7:27:35 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 7:27:35 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4229 ms
+Apr 25, 2019 7:27:49 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 7:27:49 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:27:49 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:27:49 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 7:27:59 PM services.database_service.DBService doPost
+SEVERE: null
+java.sql.SQLSyntaxErrorException: Lexical error at line 1, column 42.  Encountered: <EOF> after : "".
+	at org.apache.derby.client.am.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.ClientStatement.executeQuery(Unknown Source)
+	at services.database_service.DBService.doPost(DBService.java:74)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:104)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:1025)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2575)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2564)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: ERROR 42X02: Lexical error at line 1, column 42.  Encountered: <EOF> after : "".
+	at org.apache.derby.client.am.ClientStatement.completeSqlca(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.parsePrepareError(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.parsePRPSQLSTTreply(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.readPrepareDescribeOutput(Unknown Source)
+	at org.apache.derby.client.net.StatementReply.readPrepareDescribeOutput(Unknown Source)
+	at org.apache.derby.client.net.NetStatement.readPrepareDescribeOutput_(Unknown Source)
+	at org.apache.derby.client.am.ClientStatement.readPrepareDescribeOutput(Unknown Source)
+	at org.apache.derby.client.am.ClientStatement.flowExecute(Unknown Source)
+	at org.apache.derby.client.am.ClientStatement.executeQueryX(Unknown Source)
+	... 25 more
+
+Apr 25, 2019 7:28:00 PM org.apache.catalina.connector.CoyoteAdapter checkRecycled
+INFO: Encountered a non-recycled response and recycled it forcedly.
+org.apache.catalina.connector.CoyoteAdapter$RecycleRequiredException
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:634)
+	at org.apache.coyote.http11.AbstractHttp11Processor.recycle(AbstractHttp11Processor.java:1909)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.release(Http11AprProtocol.java:245)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:693)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2575)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2564)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+Apr 25, 2019 7:28:00 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 7:28:00 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:28:00 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:28:00 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 7:34:02 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 7:34:02 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:34:02 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:34:02 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 7:59:41 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 7:59:41 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:59:41 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 7:59:41 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:00:24 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:00:24 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:00:24 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:00:24 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:01:35 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:01:35 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:01:35 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:01:35 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:04:54 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:04:54 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:04:54 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:04:54 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:05:04 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:05:04 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:05:04 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:05:04 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:05:16 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:05:16 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:05:16 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:05:16 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:07:35 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:07:35 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:07:35 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:07:35 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:07:41 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:07:41 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:07:41 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:07:41 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:07:48 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:07:48 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:07:49 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:07:49 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:08:17 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:08:17 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:08:17 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:08:17 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:10:59 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:10:59 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:10:59 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:10:59 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:11:14 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:11:14 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:11:14 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:11:14 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:11:24 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:11:24 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:11:24 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:11:24 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:11:36 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-8443"]
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 8:11:36 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-8443"]
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-8443"]
+Apr 25, 2019 8:11:36 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.93
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 16 2019 17:13:17 UTC
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.93.0
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files\Java\JDK\jre
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_144-b01
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\conf\logging.properties
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|REMOTE92
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\temp
+Apr 25, 2019 8:11:48 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.21 using APR version 1.6.5.
+Apr 25, 2019 8:11:48 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Apr 25, 2019 8:11:48 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.1.1a  20 Nov 2018)
+Apr 25, 2019 8:11:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Apr 25, 2019 8:11:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8443"]
+Apr 25, 2019 8:11:48 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Apr 25, 2019 8:11:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 848 ms
+Apr 25, 2019 8:11:48 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 25, 2019 8:11:48 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.93
+Apr 25, 2019 8:11:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\calc.war
+Apr 25, 2019 8:11:49 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:49 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\calc.war has finished in 677 ms
+Apr 25, 2019 8:11:49 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\database_service.war
+Apr 25, 2019 8:11:49 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:49 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\database_service.war has finished in 454 ms
+Apr 25, 2019 8:11:49 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\flight_service.war
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\flight_service.war has finished in 362 ms
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\hotel_service.war
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\hotel_service.war has finished in 376 ms
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\orchestrator_service.war
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\orchestrator_service.war has finished in 363 ms
+Apr 25, 2019 8:11:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\vehicle_service.war
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\vehicle_service.war has finished in 360 ms
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\docs
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\docs has finished in 315 ms
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\examples
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\examples has finished in 508 ms
+Apr 25, 2019 8:11:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\host-manager
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\host-manager has finished in 346 ms
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\manager
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\manager has finished in 264 ms
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\ROOT
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\CJR5662\Documents\Net\ReservationService\tomcat\tomcathome\webapps\ROOT has finished in 241 ms
+Apr 25, 2019 8:11:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Apr 25, 2019 8:11:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8443"]
+Apr 25, 2019 8:11:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Apr 25, 2019 8:11:52 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4439 ms
+Apr 25, 2019 8:13:22 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:13:22 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:13:22 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:13:22 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:15:47 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:15:47 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:15:47 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:15:47 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:15:54 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:15:54 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:15:54 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:15:54 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:18:07 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:18:07 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:18:07 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:18:07 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:18:32 PM org.apache.coyote.http11.AbstractHttp11Processor process
+INFO: Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
+	at org.apache.coyote.http11.InternalNioInputBuffer.parseRequestLine(InternalNioInputBuffer.java:380)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1050)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1780)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1739)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+Apr 25, 2019 8:18:54 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:18:54 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:18:54 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:18:54 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:19:02 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:19:02 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:19:02 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:19:02 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:19:29 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:19:29 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:19:29 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:19:29 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:19:40 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:19:40 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:19:40 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:19:40 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:19:55 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:19:55 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:19:55 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:19:55 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:21:04 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:21:04 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:04 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:04 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:21:25 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:21:25 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:25 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:25 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:21:41 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:21:41 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:41 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:41 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:21:51 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:21:51 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:51 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:21:51 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:23:18 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:23:18 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:23:18 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:23:18 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:24:19 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:24:19 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:24:19 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:24:19 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:24:35 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:24:35 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:24:35 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:24:35 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:26:01 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:26:01 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:26:02 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:26:02 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:28:30 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:28:30 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:28:30 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:28:30 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:28:45 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:28:45 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:28:45 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:28:45 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:29:06 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:29:06 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:29:06 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:29:06 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:29:16 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:29:16 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:29:16 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:29:16 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:30:14 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:30:14 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:30:14 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:30:14 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:30:24 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:30:24 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:30:24 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:30:24 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:30:31 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:30:31 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:30:31 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 8:30:31 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 8:30:36 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 8:30:36 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:30:36 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 8:30:36 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 9:59:37 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 9:59:37 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 9:59:38 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 9:59:38 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 9:59:43 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 9:59:43 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 9:59:43 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 9:59:43 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
+Apr 25, 2019 9:59:57 PM services.orchestrator_service.Client.UUIDHandler getHeaders
+INFO: getHeaders
+Apr 25, 2019 9:59:57 PM services.orchestrator_service.Client.UUIDHandler handleMessage
+INFO: handleMessage
+Apr 25, 2019 9:59:57 PM services.orchestrator_service.Client.UUIDHandler handleFault
+INFO: handleFault
+Apr 25, 2019 9:59:57 PM services.orchestrator_service.Client.UUIDHandler close
+INFO: close
