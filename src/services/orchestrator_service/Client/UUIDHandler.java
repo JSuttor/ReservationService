@@ -44,7 +44,7 @@ public class UUIDHandler implements SOAPHandler<SOAPMessageContext> {
 		// Ensure that the SOAP message has a header.
 		if (hdr == null) hdr = env.addHeader();
 
-		QName qname = new QName("http://ch03.fib", "uuid");
+		QName qname = new QName("http://Reservation", "uuid");
 		SOAPHeaderElement helem = hdr.addHeaderElement(qname);
 
 		// In SOAP 1.2, setting the actor is equivalent to

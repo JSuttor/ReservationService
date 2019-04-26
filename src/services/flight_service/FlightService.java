@@ -23,7 +23,7 @@ import javax.xml.ws.http.HTTPException;
 public class FlightService extends HttpServlet {
     private HttpServletRequest request;
     private HttpServletResponse response;    
-    private static final String url = "http://localhost:8080/database_service/dbServ";    
+    private static final String url = "https://localhost:8443/database_service/dbServ";    
      
     private void sendRequest(String optionType, String cityTo, String cityFrom, int guests){
         try {

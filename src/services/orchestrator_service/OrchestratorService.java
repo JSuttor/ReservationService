@@ -31,9 +31,9 @@ import services.orchestrator_service.Client.LoginComplete;
  * @author JTS5732
  */
 public class OrchestratorService extends HttpServlet{
-    private static final String vurl = "http://localhost:8080/vehicle_service/VServ";
-    private static final String hurl = "http://localhost:8080/hotel_service/HServ";
-    private static final String furl = "http://localhost:8080/flight_service/FServ";
+    private static final String vurl = "https://localhost:8443/vehicle_service/VServ";
+    private static final String hurl = "http://localhost:8443/hotel_service/HServ";
+    private static final String furl = "http://localhost:8443/flight_service/FServ";
     private static final String cityTo = "Erie";
     private static final String cityFrom = "Pittsburgh";
     private static final int guests = 3;
