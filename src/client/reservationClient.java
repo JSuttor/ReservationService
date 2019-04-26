@@ -137,6 +137,9 @@ public class reservationClient {
                     System.out.println("Login Successful!");
                 }
                 else{
+                    rc.sendLoginRequest(username, password);
+                }
+                if(!rc.testSuccess.equals("Login Successful!")){
                     System.out.println("Login failed. Please try again.");
                 }
             }
@@ -164,6 +167,6 @@ public class reservationClient {
             rc.sendPostRequest(request);
             
             //clean servlets
-            rc.sendRequest(cityTo, cityFrom, guestNum);
+            //rc.sendRequest(cityTo, cityFrom, guestNum);
         }
 }
