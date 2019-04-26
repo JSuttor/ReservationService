@@ -61,8 +61,10 @@ public class LogRequestPortType {
         actualPassword = getPassword(username);
         if(username.isEmpty())
             throw new LogException("Empty Username isn't allowed.", "");
-        else if (!username.matches("[a-zA-Z0-9]+\\.?"))//!Pattern.matches("\\w$", username))
+        else if (!username.matches("[a-zA-Z0-9]+\\.?"))
             throw new LogException("Username can only contain Number and Letters.", username);
+        else if (!loginRequest.getPassword().matches("[a-zA-Z0-9]+\\.?"))
+            throw new LogException("Password can only contain Number and Letters.", loginRequest.getPassword());
         if(exists)
             if(loginRequest.getPassword().equals(actualPassword))
             response.setCompleted("Login Successful!");
