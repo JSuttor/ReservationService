@@ -60,6 +60,7 @@ public class OrchestratorService extends HttpServlet{
             String cityTo = request.getParameter("cityTo");
             String cityFrom = request.getParameter("cityFrom");
             String guests = request.getParameter("guests");
+            System.out.println(guests);
             int guestNum = Integer.parseInt(guests.trim());
 
             try {
@@ -81,7 +82,7 @@ public class OrchestratorService extends HttpServlet{
             System.out.println ("user: " + username);
             System.out.println ("pass: " + password);
 
-            service = new LogRequestPortTypeService();
+            service = new LogRequestPortTypeService(); 
             LogRequestPortType s = service.getLogRequestPortTypePort();
             
             LoginComplete L = new LoginComplete();
@@ -233,8 +234,8 @@ public class OrchestratorService extends HttpServlet{
                 }
                 else{
                     results += "  Return Flight:" + " $endl";
-                }
-                results += "    Option " + id + " From " + cityFrom + " to " + cityTo + " at " + time + "  Availability: " + availability + " seats" + " $endl";
+                }  
+                results += "    Option " + id + " From " + cityFrom + " to " + cityTo + " at " + time + "  Availability: " + availability + " seats" + "  Price: $" + price + " $endl";
             }
             else if(fields[0].equals("hotel")){
                 if(hotelNum == 0){
@@ -262,7 +263,7 @@ public class OrchestratorService extends HttpServlet{
                         cityTo = value[1];
                     }
                 }
-                results += "    Option " + id + " Hotel name: " + name + " in " + cityTo + " for up to " + guests + " guests.  Availability: " + availability + " rooms" + " $endl";
+                results += "    Option " + id + " Hotel name: " + name + " in " + cityTo + " for up to " + guests + " guests.  Availability: " + availability + " rooms" + "  Price: $" + price + " $endl";
             }
             else{
                 if(vehicleNum == 0){
@@ -293,7 +294,7 @@ public class OrchestratorService extends HttpServlet{
                         cityTo = value[1];
                     }
                 }
-                results += "    Option " + id + " Type: " + make + " " + model + " in " + cityTo + ".  Seats " + guests + " passenger.  Availability: " + availability + " cars" + " $endl";
+                results += "    Option " + id + " Type: " + make + " " + model + " in " + cityTo + ".  Seats " + guests + " passenger.  Availability: " + availability + " cars" + "  Price: $" + price + " $endl";
             }
         } 
         return results;
@@ -328,7 +329,7 @@ public class OrchestratorService extends HttpServlet{
                 String resp = formatResp(xml);
                 send_typed_response(request, response, resp);
                 xml = "";
-            }
+            } 
         }
         catch(IOException e) { System.err.println(e); }
     }

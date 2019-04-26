@@ -57,12 +57,13 @@ public class FlightService extends HttpServlet {
         if (entry == null)
             throw new HTTPException(HttpServletResponse.SC_BAD_REQUEST);
 
-        String[ ] parts = entry.split(",");
+
          
         //if(!parts[0].trim().equals("0"))
-            sendPostRequest(parts[0].trim());
+        entry = entry.replace(',', 'p');
+        sendPostRequest(entry);
         //if(!parts[1].trim().equals("0"))
-            sendPostRequest(parts[1].trim());
+
         
         String resp = "reservation succeeded";
         send_typed_response(request, response, resp);
@@ -125,12 +126,12 @@ public class FlightService extends HttpServlet {
         String desired_type = request.getHeader("accept");
 
         // If client requests plain text or HTML, send it; else XML.
-        if (desired_type.contains("text/plain"))
+        //if (desired_type.contains("text/plain"))
             send_plain(response, data);
-        else if (desired_type.contains("text/html"))
-            send_html(response, data);
-        else
-            send_xml(response, data);
+        //else if (desired_type.contains("text/html"))
+        //    send_html(response, data);
+        //else
+         //   send_xml(response, data);
     }
         
         private void send_xml(HttpServletResponse response, Object data) {

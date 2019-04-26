@@ -21,6 +21,7 @@ public class reservationClient {
     
     private static final String url = "https://localhost:8443/orchestrator_service/OServ";  
     String testSuccess = "";
+    String optionText;
     
     private void sendRequest(String cityTo, String cityFrom, int guests){
         try {
@@ -81,6 +82,47 @@ public class reservationClient {
         return conn;
     }
     
+    public void printReceipt(String car, String room, String flight1, String flight2, int guests){
+        String receipt = "|################|\n|     RECEIPT    |\n";
+        int carCost = 0;
+        int roomCost = 0;
+        int f1Cost = 0;
+        int f2Cost = 0;
+        
+        String[] lines = optionText.split("\n");
+        for(String line : lines){
+            if(line.contains("Type") && line.contains("Option " + car)){
+                int pIndex = line.indexOf("Price") + 8;
+                String priceStr = line.substring(pIndex);
+                carCost = Integer.parseInt(priceStr.trim());
+            }
+        }
+        for(String line : lines){
+            if(line.contains("Hotel") && line.contains("Option " + room)){
+                int pIndex = line.indexOf("Price") + 8;
+                String priceStr = line.substring(pIndex);
+                roomCost = Integer.parseInt(priceStr.trim());
+            }
+        }
+        for(String line : lines){
+            if(line.contains("From") && line.contains("Option " + flight1)){
+                int pIndex = line.indexOf("Price") + 8;
+                String priceStr = line.substring(pIndex);
+                f1Cost = Integer.parseInt(priceStr.trim());
+            }
+        }  
+        for(String line : lines){
+            if(line.contains("From") && line.contains("Option " + flight2)){
+                int pIndex = line.indexOf("Price") + 8;
+                String priceStr = line.substring(pIndex);
+                f2Cost = Integer.parseInt(priceStr.trim());
+            }
+        }
+        receipt += "|                |\n" + "|  VEHICLE:  $" + carCost + " |\n" + "|    HOTEL: $" + roomCost + " |\n" + "| FLIGHT 1:$" + f1Cost + "  |\n|     x" + guests + " =  $" + (f1Cost*guests) + " |\n" + "| FLIGHT 2:$" + f2Cost + "  |\n|     x" + guests + " =  $" + (f2Cost*guests) + " |\n";
+        receipt += "|                |\n" + "|    TOTAL: $" + (carCost + roomCost + f1Cost * guests + f2Cost * guests) + " |\n|################|";
+        System.out.println(receipt);
+    }
+    
     private void get_response(HttpURLConnection conn) {
         try {
             String xml = "";
@@ -90,8 +132,11 @@ public class reservationClient {
             while ((next = reader.readLine()) != null)
                 xml += next;
             xml = xml.replace("$endl", "\n");
-            System.out.println(xml);
-
+            if(!xml.contains("Option 0 Type:   in .  Seats 0 passenger.  Availability: 0 cars  Pr")){
+                System.out.println(xml);
+                if(xml.contains("Option"))
+                optionText = xml; 
+            }
         }
         catch(IOException e) { }
     }
@@ -165,6 +210,8 @@ public class reservationClient {
             
             String request = carOption + " " + guestNum + "," + hotelOption + " " + guestNum + "," + flightOption1 + " " + guestNum + "," + flightOption2 + " " + guestNum;
             rc.sendPostRequest(request);
+            
+            rc.printReceipt(carOption, hotelOption, flightOption1, flightOption2, guestNum);
             
             //clean servlets
             //rc.sendRequest(cityTo, cityFrom, guestNum);

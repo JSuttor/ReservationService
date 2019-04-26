@@ -51,22 +51,63 @@ public class DBService extends HttpServlet{
                 throw new HTTPException(HttpServletResponse.SC_BAD_REQUEST);
             
             String[ ] parts = entry.split(",");
-            String[ ] params = parts[1].split(" ");
-            String id = params[0].trim();
-            String guests = params[1].trim();
+            
+            System.out.println("input:" + entry );
+            String guests = "";
+            String id = "";
+            String id2 = "";
+            
+            if(parts[1].contains("p")){
+                System.out.println("parts[1]:" + parts[1]);
+                String thing = parts[1];
+                String[ ] segments = thing.split("p");
+
+                for(String seg : segments){
+                    System.out.println(seg);
+                }
+                
+                String[] p1 = segments[0].split(" ");
+                String[] p2 = segments[1].split(" ");
+                id = p1[0];
+                System.out.println("p1:" + p1[0]);
+                id2 = p2[0];
+                System.out.println("p2:" + p2[0]);
+                guests = p1[1];
+            }
+            else{
+                String[ ] params = parts[1].split(" ");
+                id = params[0].trim();
+                guests = params[1].trim();
+            }
             int guestNum = Integer.parseInt(guests.trim());
             String getSQL;
             String setSQL;
             int availability;
             ResultSet rs;
             Statement stmt = con.createStatement();
+            
+            System.out.println("id2: " + id2);
+//hotel,1 3
+    //flight,     1 3.2 3
+            
             if(parts[0].trim().equals("flight")){
+
                 getSQL = "SELECT * FROM FLIGHTS WHERE FLIGHTID=" + id;
                 rs = stmt.executeQuery(getSQL);
                 rs.next();
                 availability = rs.getInt("AVAILABILITY");
                 availability -= guestNum;
                 setSQL = "UPDATE FLIGHTS SET AVAILABILITY=" + availability + " WHERE FLIGHTID=" + id;
+                System.out.println(setSQL);
+                stmt.executeUpdate(setSQL);
+                
+                getSQL = "SELECT * FROM FLIGHTS WHERE FLIGHTID=" + id2;
+                rs = stmt.executeQuery(getSQL);
+                rs.next();
+                availability = rs.getInt("AVAILABILITY");
+                availability -= guestNum;
+                setSQL = "UPDATE FLIGHTS SET AVAILABILITY=" + availability + " WHERE FLIGHTID=" + id2;
+                System.out.println(setSQL);
                 stmt.executeUpdate(setSQL);
             }
             else if(parts[0].trim().equals("hotel")){

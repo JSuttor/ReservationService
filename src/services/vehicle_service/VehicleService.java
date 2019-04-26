@@ -121,12 +121,12 @@ public class VehicleService extends HttpServlet {
         String desired_type = request.getHeader("accept");
 
         // If client requests plain text or HTML, send it; else XML.
-        if (desired_type.contains("text/plain"))
+        //if (desired_type.contains("text/plain"))
             send_plain(response, data);
-        else if (desired_type.contains("text/html"))
-            send_html(response, data);
-        else
-            send_xml(response, data);
+        //else if (desired_type.contains("text/html"))
+            //send_html(response, data);
+        //else
+            //send_xml(response, data);
     }
         
         private void send_xml(HttpServletResponse response, Object data) {

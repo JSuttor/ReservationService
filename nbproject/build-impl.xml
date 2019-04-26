@@ -1110,23 +1110,23 @@ is divided into following sections:
     <copy file="./build/classes/services/orchestrator_service/Client/1.xml"
     tofile="./build/classes/temp/services/orchestrator_service/Client/1.xml"/>
         
-    <war webxml="./src/services/database_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\database_service.war">
+    <war webxml="./src/services/database_service/web.xml" destfile=".\tomcat\tomcathome\webapps\database_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
     
-    <war webxml="./src/services/orchestrator_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\orchestrator_service.war">
+    <war webxml="./src/services/orchestrator_service/web.xml" destfile=".\tomcat\tomcathome\webapps\orchestrator_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
     
-    <war webxml="./src/services/flight_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\flight_service.war">
+    <war webxml="./src/services/flight_service/web.xml" destfile=".\tomcat\tomcathome\webapps\flight_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
     
-    <war webxml="./src/services/vehicle_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\vehicle_service.war">
+    <war webxml="./src/services/vehicle_service/web.xml" destfile=".\tomcat\tomcathome\webapps\vehicle_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
 
-    <war webxml="./src/services/hotel_service/web.xml" destfile=".\tomcat\apache-tomcat-7.0.93-windows-x64\apache-tomcat-7.0.93\webapps\hotel_service.war">
+    <war webxml="./src/services/hotel_service/web.xml" destfile=".\tomcat\tomcathome\webapps\hotel_service.war">
         <classes dir="./build/classes/temp"/>
     </war>
     </target>
